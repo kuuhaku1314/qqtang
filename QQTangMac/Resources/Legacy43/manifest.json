@@ -1,0 +1,1357 @@
+{
+  "schemaVersion": 1,
+  "clientVersion": "4.3",
+  "assetCount": 225,
+  "assets": [
+    {
+      "path": "Common/message-box.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/dlg_msgBox_0_0.png",
+      "bytes": 21318,
+      "sha256": "b0e0a6bed73239167767044573ed392e337bcc59e6157969c1304a477b34eb7d"
+    },
+    {
+      "path": "Common/close-normal.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/btn_close_0_3.png",
+      "bytes": 2211,
+      "sha256": "5ca3c18e71d051cae106bd2c949c4056e80dd406da692c9626b49decb894565c"
+    },
+    {
+      "path": "Common/cancel-normal.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/btn_cancel_0_3.png",
+      "bytes": 2242,
+      "sha256": "7d00573aedc2fe5f2585a55ee042820ffbf4adad86fd070c5c0b4f160a5c6bb9"
+    },
+    {
+      "path": "Common/cancel-hover.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/btn_cancel_0_2.png",
+      "bytes": 2401,
+      "sha256": "07b9d5c822206a2b937dcea1a38c10ecc8a0d37a5d432208ed7dfc389bb6a787"
+    },
+    {
+      "path": "Common/cancel-pressed.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/btn_cancel_0_0.png",
+      "bytes": 1875,
+      "sha256": "c7840b186130aa0b1ed9c9a041d630028b7cf90fb5c3efb997084a9c041eea26"
+    },
+    {
+      "path": "Common/confirm-normal.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/btn_confirm_0_3.png",
+      "bytes": 2201,
+      "sha256": "8d465cc874acf3eda6e3daf2bb4c5d0d01f2d2efba9dfbaf23bb61af0ffa5dbe"
+    },
+    {
+      "path": "Common/Numbers/0.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/number1_0_0/0.png",
+      "bytes": 10835,
+      "sha256": "35c84bd339dffb035c005288f477e71b84196c9a0d2c62e038c53f5e4af7ceed"
+    },
+    {
+      "path": "Common/Numbers/1.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/number1_0_0/1.png",
+      "bytes": 3181,
+      "sha256": "0d3f503d841e1988b08fd6252ad6acb69d00e61c4b0c4eb68b82f98efb640c69"
+    },
+    {
+      "path": "Common/Numbers/2.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/number1_0_0/2.png",
+      "bytes": 9244,
+      "sha256": "2f2f06db8e4307626c60053f7f1be6082f02b53e63b79d4479bb12e0d1ebed71"
+    },
+    {
+      "path": "Common/Numbers/3.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/number1_0_0/3.png",
+      "bytes": 10853,
+      "sha256": "7354fa53e1e6f3b1e27fc484032c5e9b482915cba4a3fd7b0e1b03eabd377343"
+    },
+    {
+      "path": "Common/Numbers/4.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/number1_0_0/4.png",
+      "bytes": 6407,
+      "sha256": "2ccb1fd8b50ee12d7ecc9d385786d893b996cbc8d1d76ab05b0a6fc47ec36a57"
+    },
+    {
+      "path": "Common/Numbers/5.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/number1_0_0/5.png",
+      "bytes": 9803,
+      "sha256": "fb5a6a7bb81a4d4f48fead654af45a69c617495ce4ad65b1c785facb90e7ff3e"
+    },
+    {
+      "path": "Common/Numbers/6.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/number1_0_0/6.png",
+      "bytes": 12154,
+      "sha256": "ab24b0c9682a82ef9d20e5a7778c8f87ef476ed584f02c6d334f664e0e96d8f6"
+    },
+    {
+      "path": "Common/Numbers/7.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/number1_0_0/7.png",
+      "bytes": 6148,
+      "sha256": "52e97e5f4e6369d70c65b22bd20e1f01d8c38939918a2ad96a06c9452fee2819"
+    },
+    {
+      "path": "Common/Numbers/8.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/number1_0_0/8.png",
+      "bytes": 12472,
+      "sha256": "50ce822e64aab3d8cce9577fb79dc66f8c718d2b4367668f82afce760da488e2"
+    },
+    {
+      "path": "Common/Numbers/9.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/common/number1_0_0/9.png",
+      "bytes": 12094,
+      "sha256": "4c0ad059309415e482429e20396b5ba22ee270caeac6eb031cdb2ab385718a4e"
+    },
+    {
+      "path": "Common/leave-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_leave_0_0.png",
+      "bytes": 2389,
+      "sha256": "3933e5001d80bbe11c7be113a678b866cb4a50b8fec9f9af5143563f7f23195e"
+    },
+    {
+      "path": "Common/leave-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_leave_0_1.png",
+      "bytes": 2623,
+      "sha256": "62efb5bbcfe3219571b2d32c1a8a75cd5bb03f88d203d45018d7558fc0d11144"
+    },
+    {
+      "path": "Common/leave-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_leave_0_2.png",
+      "bytes": 3250,
+      "sha256": "38a25e7d288b6bbf4e67dd0741e48ae394612fba778ef494017ca78f7f0e00f2"
+    },
+    {
+      "path": "Common/leave-3.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_leave_0_3.png",
+      "bytes": 3566,
+      "sha256": "ebb278b3d7c0f86707de42c796394fc86f0bcf7c1a414ba23ee263178a5dcdd1"
+    },
+    {
+      "path": "Login/background.png",
+      "source": "https://qqt.95hyc.cn/source/bg_login_4.0-4.3.png",
+      "bytes": 436881,
+      "sha256": "a25886a2ef6bdfd671f3db8c6fc6557ee70a727c0ef233077e96183dc32fd03d"
+    },
+    {
+      "path": "Login/dialog.png",
+      "source": "https://qqt.95hyc.cn/source/3.2/dlg_login_0.png",
+      "bytes": 76543,
+      "sha256": "62d53c69ef04d4317d3017f1267e5c5f5aca56797e40efe788e256f456d58b65"
+    },
+    {
+      "path": "Login/logo.png",
+      "source": "https://qqt.95hyc.cn/source/4.3/img_logo_0.png",
+      "bytes": 94793,
+      "sha256": "f7d08ec3731fbc09179b4389670e8dd2eeaff6b9e1ba709e40188a2e81ac7049"
+    },
+    {
+      "path": "Login/check-on.png",
+      "source": "https://qqt.95hyc.cn/source/3.2/checkBox1.png",
+      "bytes": 359,
+      "sha256": "3007a78431a23b224a57f6c2bb947ad1ed5c6c776d27b3114dac9ee00ceb9682"
+    },
+    {
+      "path": "Login/check-off.png",
+      "source": "https://qqt.95hyc.cn/source/3.2/checkBox.png",
+      "bytes": 303,
+      "sha256": "522e5f4c0750c9316fe110ecc3646518f90c709cbd8cb6592989bd148ac656ad"
+    },
+    {
+      "path": "Login/agreement.png",
+      "source": "https://qqt.95hyc.cn/source/3.2/text_xieyi.png",
+      "bytes": 803,
+      "sha256": "5b7d4f9191a98bf8f3a842f3e8a18eda65ad56e379ba7b8d0f6e7c7ecf2ccb50"
+    },
+    {
+      "path": "Login/wait.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/dlg_wait_0_0.png",
+      "bytes": 4375,
+      "sha256": "c31a42398cbd498f7b620ae851501b609167c62c96b33ddcb7270d4bab894dcc"
+    },
+    {
+      "path": "Login/link.gif",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/img_link.gif",
+      "bytes": 5151,
+      "sha256": "6aa699d7b5fbc455fa2372c3b5cd6fe398e182946d8b41ee9c714d512bad6977"
+    },
+    {
+      "path": "Login/login-0.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_login_0_0.png",
+      "bytes": 2216,
+      "sha256": "bff4aee3bb5941e09679484cbb74741ca63e360e96dccb144b5e59fa21b905e3"
+    },
+    {
+      "path": "Login/login-1.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_login_0_1.png",
+      "bytes": 2509,
+      "sha256": "fbd618e65a7dc90f9b52b0bc1f6d7abf5a1db610e910b6d36af863045ee8b73c"
+    },
+    {
+      "path": "Login/login-2.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_login_0_2.png",
+      "bytes": 2872,
+      "sha256": "a26cb78080fdfc636b2cef88cdfcab743a7ca2a1e8807892eeca4b315c63d8db"
+    },
+    {
+      "path": "Login/quit-0.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_quit_0_0.png",
+      "bytes": 1692,
+      "sha256": "c0146e64250dd5ed8ad77a6197f0bac571e58051df0053043487051231dada61"
+    },
+    {
+      "path": "Login/quit-1.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_quit_0_1.png",
+      "bytes": 1802,
+      "sha256": "d2ed64cb45008d3633a0635dbbb19bc648426ff0eb69d95626ebc960f6c5f46f"
+    },
+    {
+      "path": "Login/quit-2.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_quit_0_2.png",
+      "bytes": 1725,
+      "sha256": "c0c8c7a98f94c9212b4376cb09f32a81b1534b5956e3349f6acca3233c576f50"
+    },
+    {
+      "path": "Login/help-0.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_help_0_0.png",
+      "bytes": 2726,
+      "sha256": "cb645428f223fa0c9068aed101ae995374238855c1cc00755355843828ffbff8"
+    },
+    {
+      "path": "Login/help-2.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_help_0_2.png",
+      "bytes": 3016,
+      "sha256": "ad2157114619f5821d48d24445f220e8520687a772e582d2f448276b5040ff52"
+    },
+    {
+      "path": "Login/help-3.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_help_0_3.png",
+      "bytes": 2873,
+      "sha256": "a8e65b6deed076089d9e20517125f3c3d2c66fc2db55aa9b608fe829cac3728b"
+    },
+    {
+      "path": "Login/playAnim-0.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_playAnim_0_0.png",
+      "bytes": 3593,
+      "sha256": "213276e61f027c08876852a92483f87ae9eec17226db2381925307e5ccdf9bdd"
+    },
+    {
+      "path": "Login/playAnim-1.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_playAnim_0_1.png",
+      "bytes": 3878,
+      "sha256": "c1f98b26b253768906c0906dc536b71be347fdc3081f96d9fa28714c35007cec"
+    },
+    {
+      "path": "Login/playAnim-2.png",
+      "source": "https://qqt.95hyc.cn/source/3.0/login/btn_playAnim_0_2.png",
+      "bytes": 3807,
+      "sha256": "6523879be3baa2356fa3c5b2e359014d6ca0df47dfa683ec1bfdd4c3c1bc9694"
+    },
+    {
+      "path": "Section/background.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/bg_selSect_5.2.png",
+      "bytes": 142581,
+      "sha256": "28e6c5d4ead49662455708e6af622a6e8bee468449b2449be744df2455a753f7"
+    },
+    {
+      "path": "Section/section-row.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/img_sect_0_0.png",
+      "bytes": 205,
+      "sha256": "177f062db97784c72174ff472bbd0e55d88704b01c8729add0ee22b8952cbf26"
+    },
+    {
+      "path": "Section/scroll-thumb.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/scl_block_0_1.png",
+      "bytes": 1602,
+      "sha256": "f2c23f45bc16c2d2183dbf21013b4b4dd95d02ba2b49fc320dfb6e823c32156b"
+    },
+    {
+      "path": "Section/server-dialog.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/dlg_selServer_0_0.png",
+      "bytes": 17696,
+      "sha256": "52ff2d42efd5be60daad67bcea7f7eb78fa23df8814e844cfb19d690610d958b"
+    },
+    {
+      "path": "Section/server-content.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/selServer_main.png",
+      "bytes": 3367,
+      "sha256": "bcc971aeee00d28c63531be83242b8d249f4d9db07b4e37b0328dc257ad1029a"
+    },
+    {
+      "path": "Section/server-close.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_cross_0_3.png",
+      "bytes": 510,
+      "sha256": "56ec317d6913f70d0b0157904b316a405498d7b17bce979f20bcccb4b7b2c286"
+    },
+    {
+      "path": "Section/tab-practice-0.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/tab_practice_0_0.png",
+      "bytes": 4233,
+      "sha256": "964aa702c0a352faa02c1539da71a369bafa308251907ad6e4e32be2d2a9606c"
+    },
+    {
+      "path": "Section/tab-practice-1.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/tab_practice_0_1.png",
+      "bytes": 3121,
+      "sha256": "23a1c9e26b242612ee8ec0b8c0c555764eb39aacf03ef142bcea74f4d45237ea"
+    },
+    {
+      "path": "Section/tab-greenhand-0.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/tab_greenhand_0_0.png",
+      "bytes": 3439,
+      "sha256": "7997008f4fdd7c7efab3a613b090267b99b7691c7b1358807826760082bd12d9"
+    },
+    {
+      "path": "Section/tab-greenhand-1.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/tab_greenhand_0_1.png",
+      "bytes": 3052,
+      "sha256": "188fc600436f22a75435b28e769092a40259e49eebe5948783ee32dc8c1b4ff2"
+    },
+    {
+      "path": "Section/tab-freedom-0.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/tab_freedom_0_0.png",
+      "bytes": 3059,
+      "sha256": "2dedbc041c52fe7807be30f1e93df98b63fd352b5657fed14d87e1252e3ef592"
+    },
+    {
+      "path": "Section/tab-freedom-1.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/tab_freedom_0_1.png",
+      "bytes": 3447,
+      "sha256": "a8e7a96595251685f1914d9db25f3396dd3cb3d969cac0b07da1b26ca53d530b"
+    },
+    {
+      "path": "Section/tab-match-0.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/tab_match_0_0.png",
+      "bytes": 3432,
+      "sha256": "3cdf1fb045a42c3539cb1565dc42c3ae4ff936297178536ce55899dfa6d81b5b"
+    },
+    {
+      "path": "Section/tab-match-1.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/tab_match_0_1.png",
+      "bytes": 3061,
+      "sha256": "b51c90448a40306b5cf14bdb85f6c0a26513e2c430951fce66ddb75b92658794"
+    },
+    {
+      "path": "Section/tab-party-0.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/tab_party_0_0.png",
+      "bytes": 3039,
+      "sha256": "847167c92bf0ad513260918b51c9c71e31a3efdb5ff3a0d24b98c9db6e170371"
+    },
+    {
+      "path": "Section/tab-party-1.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/tab_party_0_1.png",
+      "bytes": 3431,
+      "sha256": "6faa3dd0c15646b40d388308f921a3c72b6aff57c73563e9ba6146502503457f"
+    },
+    {
+      "path": "Section/practice-0.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_practice_0_0.png",
+      "bytes": 3980,
+      "sha256": "71430112e2f340e896dcee6ddb90dd41dc10486134bf880557f1bcebc6c12185"
+    },
+    {
+      "path": "Section/practice-1.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_practice_0_1.png",
+      "bytes": 3920,
+      "sha256": "b1d773c7b66171648a59b8ddf6e215fe39fc45484f1d69b36e23fdd756bf92b9"
+    },
+    {
+      "path": "Section/practice-2.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_practice_0_2.png",
+      "bytes": 4036,
+      "sha256": "c3370d9e3a09cbef7d25e884bb11b19525f415c379fb4d5a85b5a1d028c27e54"
+    },
+    {
+      "path": "Section/selZone-0.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_selZone_0_0.png",
+      "bytes": 3673,
+      "sha256": "5cad518a4846df73865af23dc0f24c96689402e0c889c0bbf795794ec37dd2eb"
+    },
+    {
+      "path": "Section/selZone-1.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_selZone_0_1.png",
+      "bytes": 4020,
+      "sha256": "7d68404521bee6dce5c9a7f85ac6d0500d786a42faa0a74dc50c746cf64d5767"
+    },
+    {
+      "path": "Section/selZone-2.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_selZone_0_2.png",
+      "bytes": 4005,
+      "sha256": "2f2567cdd401ce8a58289f3f5e233cdb0deaf1079b71f05949c1c1fcbb16c96b"
+    },
+    {
+      "path": "Section/quickJoin-0.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_quickJoin_0_0.png",
+      "bytes": 3512,
+      "sha256": "b6fe3de05331e33b965a9a33aa38d2872931486e9d09dde730922537bb744a69"
+    },
+    {
+      "path": "Section/quickJoin-1.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_quickJoin_0_1.png",
+      "bytes": 3949,
+      "sha256": "ab49b9f0e1bf1a2579c3bac7b0198476267b8d9ac1ab70f5ba8e41f78b22023a"
+    },
+    {
+      "path": "Section/quickJoin-2.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_quickJoin_0_2.png",
+      "bytes": 4012,
+      "sha256": "3ad5e8d6bc5cf5704b7aa2fddbe617384361554d129a68c8378cf22bc9687f49"
+    },
+    {
+      "path": "Section/sysSetup-0.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_sysSetup_0_0.png",
+      "bytes": 3840,
+      "sha256": "158e45a3a014c2be2c6c1161915994595e01daacd22f1c71d027c2a8c14b8316"
+    },
+    {
+      "path": "Section/sysSetup-1.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_sysSetup_0_1.png",
+      "bytes": 4313,
+      "sha256": "3b49e3a5860d0e2bcae58da6aa1c4ed8954f863c98f851d17880b273e30db782"
+    },
+    {
+      "path": "Section/sysSetup-2.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_sysSetup_0_2.png",
+      "bytes": 4360,
+      "sha256": "fe742ce7a5bbef905b6e5d1be5c92a5482e183dd07f0a1d8e45e1929d576a279"
+    },
+    {
+      "path": "Section/quit-0.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_quit_0_0.png",
+      "bytes": 2664,
+      "sha256": "4d97fea546199a4f69d00494f17bc2a87849aa1d61d13ec4acfb416e7781243b"
+    },
+    {
+      "path": "Section/quit-1.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_quit_0_1.png",
+      "bytes": 4004,
+      "sha256": "4b337e329b19e7ac664313c463c6aa64c2a4ee8472df4e93f97b594a45c40398"
+    },
+    {
+      "path": "Section/quit-2.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_quit_0_2.png",
+      "bytes": 4443,
+      "sha256": "943f8205f4dc7537b3842d38ce326ebf8881f0dfb73e9fe1214fc09551c1ac09"
+    },
+    {
+      "path": "Section/quit-3.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/btn_quit_0_3.png",
+      "bytes": 3254,
+      "sha256": "0fa246ff331a383b61c4712f8b3b747bdc66c2468361ece665ebffefeca88d94"
+    },
+    {
+      "path": "Section/state-1.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/img_state_1.png",
+      "bytes": 244,
+      "sha256": "0f0848818afb0e63727bc66f65a3c6a99fd5fdc8081ed8c4322e2d6275388554"
+    },
+    {
+      "path": "Section/state-2.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/img_state_2.png",
+      "bytes": 328,
+      "sha256": "a375f448b20df583474c693f129ca682a9771bc932cf725d3f7fe903a23385ed"
+    },
+    {
+      "path": "Section/state-3.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/img_state_3.png",
+      "bytes": 367,
+      "sha256": "26f3c6863610b864d59f8233f7efcb39230606ab083133f5a2cfed740b696301"
+    },
+    {
+      "path": "Section/state-4.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/img_state_4.png",
+      "bytes": 417,
+      "sha256": "1f727e70006ee8a8344af4332fe00862cb3d34da914f26de2865e4b338c9e36d"
+    },
+    {
+      "path": "Section/state-5.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/img_state_5.png",
+      "bytes": 473,
+      "sha256": "87423d833e5d2c3f502dce00c0c13646220ceeaaa8d2080e7a365339bb77852d"
+    },
+    {
+      "path": "Section/state-6.png",
+      "source": "https://qqt.95hyc.cn/subpage/selSect/source_selSect/5.2/img_state_6.png",
+      "bytes": 512,
+      "sha256": "3ef94a6a3486ec51aafa00968cca2094f1097813a986b4dff2beaff5a2ee2421"
+    },
+    {
+      "path": "Lobby/background.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/bg/bg_selRoom.png",
+      "bytes": 177189,
+      "sha256": "368601e80d541817ae991aa3faafdc0bed73ce8dc2e101db88e24d1206df983c"
+    },
+    {
+      "path": "Lobby/chat-normal.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/dlg_chatNormal_0_0.png",
+      "bytes": 33323,
+      "sha256": "ecbf2d696df8b452ce936856cebb217197ae0cc830525a6ca8c4e383401828d3"
+    },
+    {
+      "path": "Lobby/chat-min.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/dlg_chatMin_0_0.png",
+      "bytes": 19126,
+      "sha256": "8bcc68295084686e6aab646da769554a71ca83a2012d9567d47e7d029f44e9f4"
+    },
+    {
+      "path": "Lobby/chat-max.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/dlg_chatMax_0_0.png",
+      "bytes": 47555,
+      "sha256": "ccab86f6027c16485bfb7d3dbb247ff5a62a005c6dd41c03ec92433132dad6d7"
+    },
+    {
+      "path": "Lobby/map-filter.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/map/dlg_mapFilter_0_0.png",
+      "bytes": 12341,
+      "sha256": "97f8507e1e45d800b93ccfdcf4d1f7cfbb9b37e38e21c6bd17df8b6f37065bd2"
+    },
+    {
+      "path": "Lobby/room-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/dlg_room_0_0.png",
+      "bytes": 3843,
+      "sha256": "210f02c359e4b78da2b7282a6f62da13b3d5cd11b125f156c58f4075bd4935fe"
+    },
+    {
+      "path": "Lobby/room-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/dlg_room_0_1.png",
+      "bytes": 4630,
+      "sha256": "3d18665d43a3e09c6ec9a56500bfc378e95c47bde630f3c54d8d8fad2e3e31c1"
+    },
+    {
+      "path": "Lobby/room-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/dlg_room_0_2.png",
+      "bytes": 4476,
+      "sha256": "66d452f2208f87469fbc832f5062ed2ffb33c4de02c502dc4e1a99eec7e5cbe8"
+    },
+    {
+      "path": "Lobby/tab_compete-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_compete_0_0.png",
+      "bytes": 4916,
+      "sha256": "82f769db17f1396585d2b24b404b03280f4f5a81a155117b8e5233b0bb9462d4"
+    },
+    {
+      "path": "Lobby/tab_compete-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_compete_0_1.png",
+      "bytes": 5733,
+      "sha256": "d555df9ebb4576cfa4ecb26283a6735504955fe7a80f9fc6186d74ba8e626b3e"
+    },
+    {
+      "path": "Lobby/tab_explore-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_explore_0_0.png",
+      "bytes": 5524,
+      "sha256": "c570390a7923ed3bd1ebf417ec199f1474f68216263dcd8d21e962e09fb2e6fa"
+    },
+    {
+      "path": "Lobby/tab_explore-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_explore_0_1.png",
+      "bytes": 6202,
+      "sha256": "47e056f3a145e67d6fb7742c0624c8df5cef862247956f29ce039f3faefb73c9"
+    },
+    {
+      "path": "Lobby/tab_chat-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_chat_0_0.png",
+      "bytes": 13145,
+      "sha256": "408f4c3856ab246b74639597abbc3739f791fa1b1035db5e5db7d36e70c900fe"
+    },
+    {
+      "path": "Lobby/tab_chat-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_chat_0_1.png",
+      "bytes": 13297,
+      "sha256": "8c2e040fd1bebbe973370b518fd87b40429228c6f134467fe96dd21d10d5a788"
+    },
+    {
+      "path": "Lobby/tab_noItem-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_noItem_0_0.png",
+      "bytes": 2235,
+      "sha256": "293dd052816191b0263167a2a66f87db482de1325b0b9b2ed4634f5d0cd0d369"
+    },
+    {
+      "path": "Lobby/tab_noItem-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_noItem_0_1.png",
+      "bytes": 3776,
+      "sha256": "d454029422439aae56732020b82f2defa4645ae205f146a16911be0475f5d2f7"
+    },
+    {
+      "path": "Lobby/tab_item-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_item_0_0.png",
+      "bytes": 2141,
+      "sha256": "2d762b6762ebbc2bbee52a9519420fc694858be49dcb89436e633bdc37a11fd6"
+    },
+    {
+      "path": "Lobby/tab_item-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_item_0_1.png",
+      "bytes": 3610,
+      "sha256": "462eceaeea2cee85bb5db0d0767f486f9ceaa1d8f464a4b5c16301802b211411"
+    },
+    {
+      "path": "Lobby/tab_honor-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_honor_0_0.png",
+      "bytes": 2083,
+      "sha256": "10504153a4b589bfc8dcedc6bf527d891773c8a24a5ece8bc3218e7fc41dfe8c"
+    },
+    {
+      "path": "Lobby/tab_honor-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_honor_0_1.png",
+      "bytes": 3596,
+      "sha256": "40a9961e6838a4116ce4ba2b22497c08039d419d61863320a129c0fb7370ae45"
+    },
+    {
+      "path": "Lobby/tab_player-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_player_0_0.png",
+      "bytes": 1106,
+      "sha256": "c42f99f0e82de36bb97ad7e4c72f4d7bd12f8a2c95dd2c19e119c958fbfe6c28"
+    },
+    {
+      "path": "Lobby/tab_player-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_player_0_1.png",
+      "bytes": 1059,
+      "sha256": "31b8ae90167854c195d51eb4947299ea6efaa76d7d58611a0d3e0cd7d817eb60"
+    },
+    {
+      "path": "Lobby/tab_friend-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_friend_0_0.png",
+      "bytes": 1136,
+      "sha256": "0e1f952cb66265b8fb1a45d67cb4ef1a2c3369c61251b2a5289a6012d7660753"
+    },
+    {
+      "path": "Lobby/tab_friend-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_friend_0_1.png",
+      "bytes": 1048,
+      "sha256": "1e26498b1e8d8e1f54a924ebc478ecbe1a7e0ad3a40c1c4f553936e8147a2180"
+    },
+    {
+      "path": "Lobby/tab_allKinMember-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_allKinMember_0_0.png",
+      "bytes": 1149,
+      "sha256": "b79379e90298cc591e3b56821dda11a159001fdbfdab5a60ba2d734bddaa5a86"
+    },
+    {
+      "path": "Lobby/tab_allKinMember-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/tab_allKinMember_0_1.png",
+      "bytes": 1094,
+      "sha256": "284211c4116579b00333fbf1828bdb0d02b07c4f1417c0d57b80d4f6c19b018a"
+    },
+    {
+      "path": "Lobby/createRoom-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_createRoom_0_0.png",
+      "bytes": 3651,
+      "sha256": "27bdcdf20c9976b2f677da85d93b1351bc16535bd3e747f473e5619923bd5fce"
+    },
+    {
+      "path": "Lobby/createRoom-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_createRoom_0_1.png",
+      "bytes": 4016,
+      "sha256": "52d5c85f570c382634c498f380c0b5d33a695a58eab3119f02ca921ce37c7081"
+    },
+    {
+      "path": "Lobby/createRoom-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_createRoom_0_2.png",
+      "bytes": 4195,
+      "sha256": "a295c6c695fe6ef5f919898c28a52ae648855d4fe8c07ccb553e5a7057814b1d"
+    },
+    {
+      "path": "Lobby/shop-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_shop_0_0.png",
+      "bytes": 6484,
+      "sha256": "e139125e1bbc4446d16debcd88b45708dbb7ec8f631fc63618063c4fe404d1fe"
+    },
+    {
+      "path": "Lobby/shop-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_shop_0_1.png",
+      "bytes": 6151,
+      "sha256": "f97610073596ad9deaae44419ebd567c3acfdf115a30a76e5914a6939692b706"
+    },
+    {
+      "path": "Lobby/shop-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_shop_0_2.png",
+      "bytes": 6397,
+      "sha256": "c293456306a43eda4003f5aea9ab47ff21a156797bfaf18f892b1b9a20acc711"
+    },
+    {
+      "path": "Lobby/match-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_match_0_0.png",
+      "bytes": 3927,
+      "sha256": "14fdb5db67fcc968089c1ccff52580ff9b180dcf53cab96a95c6b1c1978f7425"
+    },
+    {
+      "path": "Lobby/match-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_match_0_1.png",
+      "bytes": 4155,
+      "sha256": "93e7cd7868ef245c8a6eacd9404437aa4368f8c98ac6f7a821985cc2da2dc777"
+    },
+    {
+      "path": "Lobby/match-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_match_0_2.png",
+      "bytes": 4432,
+      "sha256": "2c1b77abfb27ec5e9d6b80ebe9f7e3e5490d16ba959271026bf424ec1d530239"
+    },
+    {
+      "path": "Lobby/left-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_left_0_0.png",
+      "bytes": 866,
+      "sha256": "166189c2038b43d41a1110066f48967d6184532839511636a0378ef42eae02f1"
+    },
+    {
+      "path": "Lobby/left-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_left_0_2.png",
+      "bytes": 976,
+      "sha256": "758a30b330f4b7491f76f87642eec9e2152b3aee5ba12429735c35055e1584bb"
+    },
+    {
+      "path": "Lobby/left-3.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_left_0_3.png",
+      "bytes": 1023,
+      "sha256": "b5120a768e4d42eab9d592312eef617597819f2d5eae2ca64f102a1448182af7"
+    },
+    {
+      "path": "Lobby/right-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_right_0_0.png",
+      "bytes": 818,
+      "sha256": "b02b8214ba3da931179359671effad82433585bfed3cc83e0965c2b1dea05002"
+    },
+    {
+      "path": "Lobby/right-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_right_0_2.png",
+      "bytes": 1003,
+      "sha256": "c3d1e7febadacd37a5bb941dabd8b37af600eebd99c890e36f761184ee22472f"
+    },
+    {
+      "path": "Lobby/right-3.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_right_0_3.png",
+      "bytes": 1049,
+      "sha256": "60c04089ddf7ed2acf05167d724cfc2b0a58ddce4fec7af5227b769cc5e24270"
+    },
+    {
+      "path": "Lobby/mapFilter-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_mapFilter_0_0.png",
+      "bytes": 425,
+      "sha256": "54c2cd0429b14e53e77b1a91a9f710456026c5f09240bf65883a3b234cb27363"
+    },
+    {
+      "path": "Lobby/mapFilter-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_mapFilter_0_2.png",
+      "bytes": 310,
+      "sha256": "d904102f588ab17e8613fcdc283e47d4c618051cabb6de9018b319d53cbc87db"
+    },
+    {
+      "path": "Lobby/flexDown-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_flexDown_0_0.png",
+      "bytes": 684,
+      "sha256": "0fb9390e59640285ebdea0746c06bd712801afbff5796fe58551a16d67d0ec1e"
+    },
+    {
+      "path": "Lobby/flexDown-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_flexDown_0_1.png",
+      "bytes": 564,
+      "sha256": "7b9802666981a2698d0f15bc793a0203e1a95fe3b09496a097d02631144d1c67"
+    },
+    {
+      "path": "Lobby/flexDown-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_flexDown_0_2.png",
+      "bytes": 689,
+      "sha256": "d24c3df840ba4b966ad643fb7809c6249ba1228dc651970bbe6262e6a3a76e3c"
+    },
+    {
+      "path": "Lobby/flexUp-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_flexUp_0_0.png",
+      "bytes": 691,
+      "sha256": "792e5cc1ec083c3698cdc3d51fab1b7509da2b353eb50b0c4aa04ed15c1a742a"
+    },
+    {
+      "path": "Lobby/flexUp-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_flexUp_0_1.png",
+      "bytes": 548,
+      "sha256": "6624a809cfc4109b8e5b434058ba9a224b1a8f1f558bfcf502e9880300c826c8"
+    },
+    {
+      "path": "Lobby/flexUp-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selRoom/btn_flexUp_0_2.png",
+      "bytes": 659,
+      "sha256": "8e6d5263ab93bd2fa3adb667aa42dfd1b9959d9bc02d7353f46e0c2dcc6db1dc"
+    },
+    {
+      "path": "Lobby/practice-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selSect/btn_practice_0_0.png",
+      "bytes": 3987,
+      "sha256": "aaba1b7a83adf97ec4652b95b5a3aaa63742b8e7c1461caeb8efb35749cf7bd0"
+    },
+    {
+      "path": "Lobby/practice-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selSect/btn_practice_0_1.png",
+      "bytes": 3920,
+      "sha256": "b1d773c7b66171648a59b8ddf6e215fe39fc45484f1d69b36e23fdd756bf92b9"
+    },
+    {
+      "path": "Lobby/practice-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selSect/btn_practice_0_2.png",
+      "bytes": 4036,
+      "sha256": "c3370d9e3a09cbef7d25e884bb11b19525f415c379fb4d5a85b5a1d028c27e54"
+    },
+    {
+      "path": "Lobby/quickJoin-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selSect/btn_quickJoin_0_0.png",
+      "bytes": 3512,
+      "sha256": "b6fe3de05331e33b965a9a33aa38d2872931486e9d09dde730922537bb744a69"
+    },
+    {
+      "path": "Lobby/quickJoin-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selSect/btn_quickJoin_0_1.png",
+      "bytes": 3949,
+      "sha256": "ab49b9f0e1bf1a2579c3bac7b0198476267b8d9ac1ab70f5ba8e41f78b22023a"
+    },
+    {
+      "path": "Lobby/quickJoin-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/selSect/btn_quickJoin_0_2.png",
+      "bytes": 4012,
+      "sha256": "3ad5e8d6bc5cf5704b7aa2fddbe617384361554d129a68c8378cf22bc9687f49"
+    },
+    {
+      "path": "Room/background.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/bg/bg_room.png",
+      "bytes": 133474,
+      "sha256": "e65137aa850440649943e4cdceb64d0f0d397d292448618987c8cd39090eee97"
+    },
+    {
+      "path": "Room/select-mode-dialog.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/dlg_selMode.png",
+      "bytes": 17135,
+      "sha256": "9822d6a188c893fd9c73836e61fceb6b58aa343d01766d6568db336579ba0a69"
+    },
+    {
+      "path": "Room/room-property-dialog.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/dlg_roomProp.png",
+      "bytes": 17674,
+      "sha256": "acefdc115d1ef791ece17dceb8a97eabd195597d6608c2b55d5dd3d3f526daa1"
+    },
+    {
+      "path": "Room/select-map-dialog.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/dlg_selMap.png",
+      "bytes": 16639,
+      "sha256": "e938ae77b00cb7fba2b002efdc0741915a1ae0c884b72519136c3ba3779c0bec"
+    },
+    {
+      "path": "Room/random-map.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/map/rand_0.png",
+      "bytes": 27396,
+      "sha256": "6fa2f0b7f8af479274ad0d04e20e2e2f589118465d150545086eb56b2453b7ba"
+    },
+    {
+      "path": "Room/random-map-name.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/map/rand_0_name.png",
+      "bytes": 380,
+      "sha256": "825994bd0ca7c40a9eb248f3b78a8f61f7b7da36ef57e7e457e42bf766090cf0"
+    },
+    {
+      "path": "Room/selMode-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_selMode_0_0.png",
+      "bytes": 5205,
+      "sha256": "e06604e67d9b1eaa5dd2a89bc59b602b2a2c2ece0292a1103d279bcff49b2e25"
+    },
+    {
+      "path": "Room/selMode-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_selMode_0_1.png",
+      "bytes": 6974,
+      "sha256": "7c0b7e92a08ce96e21f63cc4f4ececca4102124a0d8d65af53aa34fe369b6e43"
+    },
+    {
+      "path": "Room/selMode-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_selMode_0_2.png",
+      "bytes": 5965,
+      "sha256": "c74596c3ab8f636b6162338651ad62b7e1cc38895adf9707eb329920da9dc845"
+    },
+    {
+      "path": "Room/roomProp-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_roomProp_0_0.png",
+      "bytes": 4858,
+      "sha256": "6c671e9f7d79a1f45eae786e34684d7fc642422bd2a34656cb93932968f7f9c0"
+    },
+    {
+      "path": "Room/roomProp-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_roomProp_0_1.png",
+      "bytes": 6244,
+      "sha256": "d41aef2d06ffa2c139d646fff4046157ef9d057aff1122ab5570c6c052608276"
+    },
+    {
+      "path": "Room/roomProp-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_roomProp_0_2.png",
+      "bytes": 5561,
+      "sha256": "60543e375304fe6174931ddc2f09b6b3cb4c64fe956825377fbe1e7b511b9345"
+    },
+    {
+      "path": "Room/selMap-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_selMap_0_0.png",
+      "bytes": 5117,
+      "sha256": "3d45f1251af683514fb0475dfcdd8253f8c202b082cf77d75405792a2d3f1363"
+    },
+    {
+      "path": "Room/selMap-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_selMap_0_1.png",
+      "bytes": 6526,
+      "sha256": "cf8a7727d3dc034af35baad92dcaff3d603860863e93e0c536651928b0e791c3"
+    },
+    {
+      "path": "Room/selMap-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_selMap_0_2.png",
+      "bytes": 5839,
+      "sha256": "c4bdc7f8ce06fb4840c4ed532c6da39ce11e12a1c703825dc56e66df8f770986"
+    },
+    {
+      "path": "Room/start-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_start_0_0.png",
+      "bytes": 9425,
+      "sha256": "be095bb0e6c32bda01e3e4d7e1099177c40473ed195ef8941a49934740f34172"
+    },
+    {
+      "path": "Room/start-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_start_0_1.png",
+      "bytes": 8604,
+      "sha256": "1bcc7af8c9e3ddd2031fecd7acb59daa88fd92ad76f606c8bb838c907388618c"
+    },
+    {
+      "path": "Room/start-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_start_0_2.png",
+      "bytes": 10102,
+      "sha256": "4cad76c7475c077b9fa405df921b6a35df587244f83611802e49121ec249954a"
+    },
+    {
+      "path": "Room/start-3.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_start_0_3.png",
+      "bytes": 10592,
+      "sha256": "a38b48b51b4714a3752a681fbc89f03cf69b32db9e72bbd7388041c7dce7d226"
+    },
+    {
+      "path": "Room/playerUp-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_playerUp_0_0.png",
+      "bytes": 15114,
+      "sha256": "8be4a0592b1f9a6291e217d340f8d366484d58d9aa8085aa9b8ab3faa1e681e5"
+    },
+    {
+      "path": "Room/playerUp-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_playerUp_0_1.png",
+      "bytes": 18845,
+      "sha256": "b275bb8ae3f5fc631e764574198932f53f92273c67671184f1850463f5acbf7e"
+    },
+    {
+      "path": "Room/playerDown-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_playerDown_0_0.png",
+      "bytes": 14959,
+      "sha256": "818006f207e1a5b058a7dd67ad56aa8cf3e1fbd28886b5eca030a0c99477d99e"
+    },
+    {
+      "path": "Room/playerDown-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_playerDown_0_1.png",
+      "bytes": 17927,
+      "sha256": "ac0c90ed635628af6ba813cd0c35c1b6654c3b17dc63459fa358fe449f45d4ed"
+    },
+    {
+      "path": "Room/return-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_return_0_0.png",
+      "bytes": 2518,
+      "sha256": "8655d422d61e7d590809591ec9d4804e997eadf9aaf586fabd0ac9b0f6a8f3af"
+    },
+    {
+      "path": "Room/return-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_return_0_1.png",
+      "bytes": 2636,
+      "sha256": "9df952adcb5486aed11068195a88611aa622b8f7e25d77c114e0bc11091d087e"
+    },
+    {
+      "path": "Room/return-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_return_0_2.png",
+      "bytes": 2966,
+      "sha256": "c2dccc92c92afb51befb1d565b7391703e643b382a926fdb10ca5c6e919d3ffc"
+    },
+    {
+      "path": "Room/return-3.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_return_0_3.png",
+      "bytes": 2952,
+      "sha256": "9810006d3f584165e72c1cb342c63bed29c1335ae90d8001e30fecb0086473ba"
+    },
+    {
+      "path": "Room/leftRole-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_leftRole_0_0.png",
+      "bytes": 2229,
+      "sha256": "51d69177fe5ad176276d66e26c4c5ce54cb661be537eaf55ba7c8d2795a12d04"
+    },
+    {
+      "path": "Room/leftRole-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_leftRole_0_1.png",
+      "bytes": 2141,
+      "sha256": "1c2735eb727d8696616380f8b69214317c42632e37e326d65eaea6c18cf5878a"
+    },
+    {
+      "path": "Room/leftRole-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_leftRole_0_2.png",
+      "bytes": 2132,
+      "sha256": "cac846b6d4191728b494a9732f606eb95e92ad650c39eac796edd4cafe66c70b"
+    },
+    {
+      "path": "Room/leftRole-3.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_leftRole_0_3.png",
+      "bytes": 2529,
+      "sha256": "f7f4534a85a1782dd2f9726f32bd4a1657cd459beeb3894927736fbee4ab2820"
+    },
+    {
+      "path": "Room/leftRole-4.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_leftRole_0_4.png",
+      "bytes": 2739,
+      "sha256": "4f773c55faf0606aef325e4ad2b2d1f71f1071e88b93d1542b65336b351c67ce"
+    },
+    {
+      "path": "Room/leftRole-5.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_leftRole_0_5.png",
+      "bytes": 2512,
+      "sha256": "5febfa6c78cdb914bdccb16a2e9063dc8c29f944b619da50dafa2094b33ce6c5"
+    },
+    {
+      "path": "Room/rightRole-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_rightRole_0_0.png",
+      "bytes": 2114,
+      "sha256": "cfe83bcd4a0092031aa0b94f075303d3d15441753c375e6c9db4e0db9af01c8d"
+    },
+    {
+      "path": "Room/rightRole-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_rightRole_0_1.png",
+      "bytes": 2171,
+      "sha256": "7d44cb52ae006d3d8eee263cdc93d99df759d5741e2b6665d8310928bab83b02"
+    },
+    {
+      "path": "Room/rightRole-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_rightRole_0_2.png",
+      "bytes": 2077,
+      "sha256": "15e13ac137de55f5968e5dd55c932ba43e5fa2ffc8e98163fe4c4e09858694f0"
+    },
+    {
+      "path": "Room/rightRole-3.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_rightRole_0_3.png",
+      "bytes": 2447,
+      "sha256": "76b872466773cd3abdf364e7589bbc0a3838ddb6596e78c6e54e7a5f68275e04"
+    },
+    {
+      "path": "Room/rightRole-4.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_rightRole_0_4.png",
+      "bytes": 2679,
+      "sha256": "a8f58e29f4baf5a315c429c85644790ed0e613f88cadbce70b2f8b1070402b32"
+    },
+    {
+      "path": "Room/rightRole-5.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/room/btn_rightRole_0_5.png",
+      "bytes": 2451,
+      "sha256": "e8938bc45bb5f2421ed96936da62c3d9d6bfbcf8b7e3806d8caef230d2dc36d4"
+    },
+    {
+      "path": "Game/status-bar.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/game/dlg_statusBar.png",
+      "bytes": 26185,
+      "sha256": "b95fa43563d4c579e631c8bd6235850655d47ca360902d719a8b508b7493536a"
+    },
+    {
+      "path": "Game/pve-functions.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/game/dlg_pveFunc.png",
+      "bytes": 11639,
+      "sha256": "4f9f6149dd52b3378143cd2c8b966c5b19ab5ec405f6b3ea028cafbcc27ad30f"
+    },
+    {
+      "path": "Game/Player/n02-c1-down-1.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_down1.png",
+      "bytes": 2076,
+      "sha256": "753bbd33bf59c57d82ef8f218d83824493f4067f0bfdfd02f5e89d79c68cce0a"
+    },
+    {
+      "path": "Game/Player/n02-c1-down-2.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_down2.png",
+      "bytes": 2071,
+      "sha256": "94ab5fe5d4a06437dacfbe6ca7b719bc678f133db3bd907a2d43724da6a3bf81"
+    },
+    {
+      "path": "Game/Player/n02-c1-down-3.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_down3.png",
+      "bytes": 1881,
+      "sha256": "e5c8bb6b288d0245f6f372ab59f0b82e5b277ce58529ef0a476d4642bba97fb6"
+    },
+    {
+      "path": "Game/Player/n02-c1-down-4.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_down4.png",
+      "bytes": 2092,
+      "sha256": "7548d5b314d28fe3ed89280ef6cb5cba023fb9c03ddc53fa43f2c48f2640aedd"
+    },
+    {
+      "path": "Game/Player/n02-c1-down-5.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_down5.png",
+      "bytes": 2041,
+      "sha256": "b1e23b39c2fe29399249250f9a6e306884115bcbff6c8444366a254f2360222e"
+    },
+    {
+      "path": "Game/Player/n02-c1-down-6.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_down6.png",
+      "bytes": 1943,
+      "sha256": "0395fcc6e4e3b8e85b117fd391bf49ff8dd658f55340773111962c5c3563e07c"
+    },
+    {
+      "path": "Game/Player/n02-c1-left-1.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_left1.png",
+      "bytes": 1778,
+      "sha256": "667cb92423cbe7eed8988a782a0995875bd229dd639a151d7022c6988458b021"
+    },
+    {
+      "path": "Game/Player/n02-c1-left-2.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_left2.png",
+      "bytes": 1864,
+      "sha256": "7bafd417c8c136d0c422fc5bc64efbd90fb54aef351772ff0a828f585e4939f5"
+    },
+    {
+      "path": "Game/Player/n02-c1-left-3.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_left3.png",
+      "bytes": 1835,
+      "sha256": "4e9a94cac52479778183fce4c16a60f3591e478a144af26b3402a8f4285d592e"
+    },
+    {
+      "path": "Game/Player/n02-c1-left-4.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_left4.png",
+      "bytes": 1762,
+      "sha256": "40e6c3e1d25f76223a99305f0c2a4c886a00bcab5f0666d1eafba5c2e66dcdd8"
+    },
+    {
+      "path": "Game/Player/n02-c1-left-5.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_left5.png",
+      "bytes": 1858,
+      "sha256": "1665fac768363b8a7dbbaf404f8d9735c6648641e840480bac006f3552b1e3a8"
+    },
+    {
+      "path": "Game/Player/n02-c1-left-6.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_left6.png",
+      "bytes": 1897,
+      "sha256": "49aba5f9938aa8ab5608494be4bac1bcce842c885d59566a4d3f01d9755ef21e"
+    },
+    {
+      "path": "Game/Player/n02-c1-right-1.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_right1.png",
+      "bytes": 1776,
+      "sha256": "48ae9fd02f19a5aed1298030aa2770f647c44514a28d950858bca06ce8231ca9"
+    },
+    {
+      "path": "Game/Player/n02-c1-right-2.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_right2.png",
+      "bytes": 1822,
+      "sha256": "9c5d52261def4ed87c5ecea651587e27dbcb087062bb114ed772c285cf21018e"
+    },
+    {
+      "path": "Game/Player/n02-c1-right-3.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_right3.png",
+      "bytes": 1845,
+      "sha256": "0338c9ed1030de063fc8cdd486c4ebdb545d7d671bf75cd58c44ef0d88035c21"
+    },
+    {
+      "path": "Game/Player/n02-c1-right-4.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_right4.png",
+      "bytes": 1773,
+      "sha256": "14147979be35a5eb633fec831935465e068b70cd0d0eaebe9ead3ce37e48a375"
+    },
+    {
+      "path": "Game/Player/n02-c1-right-5.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_right5.png",
+      "bytes": 1874,
+      "sha256": "a801900659277a5fd8b636a4c9e996a1422afe02d7b2696f6078e1e817691082"
+    },
+    {
+      "path": "Game/Player/n02-c1-right-6.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_right6.png",
+      "bytes": 1917,
+      "sha256": "6aa7f0750b8615183b32359fb02f28824f274414edddd60a2532c866fa93604e"
+    },
+    {
+      "path": "Game/Player/n02-c1-up-1.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_up1.png",
+      "bytes": 1617,
+      "sha256": "ba40f10b8af557f963648d2803032b177857ad96d87f9b5abe4991879642ce07"
+    },
+    {
+      "path": "Game/Player/n02-c1-up-2.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_up2.png",
+      "bytes": 1495,
+      "sha256": "5bc448a2f9edfb9c88438c6d161576392fb2c883b6f585dcb3cf2be899c2dcbc"
+    },
+    {
+      "path": "Game/Player/n02-c1-up-3.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_up3.png",
+      "bytes": 1435,
+      "sha256": "60fe0cf0655b27576ce2c3f52334a360214229444d8f56bc0eae024c0fe28068"
+    },
+    {
+      "path": "Game/Player/n02-c1-up-4.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_up4.png",
+      "bytes": 1617,
+      "sha256": "ba40f10b8af557f963648d2803032b177857ad96d87f9b5abe4991879642ce07"
+    },
+    {
+      "path": "Game/Player/n02-c1-up-5.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_up5.png",
+      "bytes": 1487,
+      "sha256": "f5f49bbb442bbb3f8093d6e801e69ca72197e93e27f26d6a5b5bb608813d3f2a"
+    },
+    {
+      "path": "Game/Player/n02-c1-up-6.png",
+      "source": "https://qqt.95hyc.cn/ui/player/n02_c1_up6.png",
+      "bytes": 1434,
+      "sha256": "b4346f5a61a4db03227b512a9b3f5d732d8ff0f123480a537d20e6196dfd2935"
+    },
+    {
+      "path": "Game/leave-0.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_leavegame_0_0.png",
+      "bytes": 2628,
+      "sha256": "3c633520d05976eb49ab35ad7ddba366c938d6cc56bd29c20873038a6b57b954"
+    },
+    {
+      "path": "Game/leave-1.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_leavegame_0_1.png",
+      "bytes": 2860,
+      "sha256": "a902abc0412500c9234c9ed078e670b0f56a316f1e9d915969dd0078d8fd8a4e"
+    },
+    {
+      "path": "Game/leave-2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_leavegame_0_2.png",
+      "bytes": 3257,
+      "sha256": "c4048b849849a1375a853422c1676f7ff8646eebd33c54362736364aa5cb7ef7"
+    },
+    {
+      "path": "Game/leave-3.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/common/btn_leavegame_0_3.png",
+      "bytes": 3159,
+      "sha256": "9a6c48025135632e45a0d7ea2bb25c25100e29ba5230fbbd67baccb82b7601ac"
+    },
+    {
+      "path": "Map/rand.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/map/rand_0.png",
+      "bytes": 27396,
+      "sha256": "6fa2f0b7f8af479274ad0d04e20e2e2f589118465d150545086eb56b2453b7ba"
+    },
+    {
+      "path": "Map/match01_2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/map/match01_2_0.png",
+      "bytes": 13709,
+      "sha256": "02a85d68bc527dbb871d48f80e066be894de06dbb475e09f61b49fa56beae348"
+    },
+    {
+      "path": "Map/match02_2.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/map/match02_2_0.png",
+      "bytes": 14846,
+      "sha256": "ef4607398fe74b73dafd25f0283f88837bb6eb617b37b7bebb145440dceca56a"
+    },
+    {
+      "path": "Map/town01_4.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/map/town01_4_0.png",
+      "bytes": 13974,
+      "sha256": "7ace3b06b5d784455edfdf69c078f64c9203177ab1a15d75f6b520950426acbe"
+    },
+    {
+      "path": "Map/desert01_4.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/map/desert01_4_0.png",
+      "bytes": 11285,
+      "sha256": "f4ea11c211c1c3d7e393bdfadfc28f83b02f057f5b9e8cc20d197635f55c7305"
+    },
+    {
+      "path": "Map/pig01_4.png",
+      "source": "https://qqt.95hyc.cn/ui/3.0/map/pig01_4_0.png",
+      "bytes": 11137,
+      "sha256": "0016a408bfd8fef3bc311e1a99aa46cef0bbba9f7825d0531ca39f8339e10695"
+    },
+    {
+      "path": "Game/MapElements/pig/elem1_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem1_stand.img",
+      "bytes": 4868,
+      "sha256": "73c2c1c216b81578baebc3189279530ec84733cdc0ab05d7216b3eab23f86a54"
+    },
+    {
+      "path": "Game/MapElements/pig/elem2_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem2_stand.img",
+      "bytes": 4868,
+      "sha256": "7c898165c14c79c46dd559fcd6424ddfa570e731fc9420d01b0ca50aa6014b14"
+    },
+    {
+      "path": "Game/MapElements/pig/elem3_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem3_stand.img",
+      "bytes": 22211,
+      "sha256": "308284bb82a13c7fcb087aa4527b7fa72c4a56c19c74cc933c788999dcd56eb7"
+    },
+    {
+      "path": "Game/MapElements/pig/elem4_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem4_stand.img",
+      "bytes": 89492,
+      "sha256": "e9d4ccfe88b3a231ed8f391816cb3e866b29f3f6a97dfed770523fc5e2859a72"
+    },
+    {
+      "path": "Game/MapElements/pig/elem5_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem5_stand.img",
+      "bytes": 54311,
+      "sha256": "b0e17dbcc9500d317d20f26051b0b59ca9dc95e5185a8577dae8e494c923c249"
+    },
+    {
+      "path": "Game/MapElements/pig/elem6_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem6_stand.img",
+      "bytes": 23684,
+      "sha256": "805f1ab5b218596e1ac9d628eaf1b1d497a20ad02ce993d09783a7c4aea8f817"
+    },
+    {
+      "path": "Game/MapElements/pig/elem7_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem7_stand.img",
+      "bytes": 61592,
+      "sha256": "75447fde5744bb936d21f705f8a9cedeb8335fe06dc02856f90175db324c457a"
+    },
+    {
+      "path": "Game/MapElements/pig/elem8_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem8_stand.img",
+      "bytes": 61592,
+      "sha256": "7a299fbed1969f57c9ecdde496c5383d155e0a3c19bea97baf09fbb85c032ba0"
+    },
+    {
+      "path": "Game/MapElements/pig/elem9_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem9_stand.img",
+      "bytes": 7292,
+      "sha256": "a35aeb429cba8a1c9a832bd578d060dcf0476e0479a4e57602e00fd039b21b5b"
+    },
+    {
+      "path": "Game/MapElements/pig/elem10_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem10_stand.img",
+      "bytes": 8573,
+      "sha256": "ef3243e821c60f05eca43aee6aec2335e4183c6821eba7a38996da0e5ef53ab7"
+    },
+    {
+      "path": "Game/MapElements/pig/elem11_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem11_stand.img",
+      "bytes": 6905,
+      "sha256": "b23ff9aba3e11fead3cc989f3f95944808b934ebfea9a677a165fee9c2348180"
+    },
+    {
+      "path": "Game/MapElements/pig/elem12_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem12_stand.img",
+      "bytes": 6620,
+      "sha256": "798fb88857bfeb581032c312173a9d20beb7a10620e1abe5e98a6ec905afb1a5"
+    },
+    {
+      "path": "Game/MapElements/pig/elem13_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem13_stand.img",
+      "bytes": 10400,
+      "sha256": "6477db8cad96a8020906f7bf2b796ea782b4ec216af00b0f47cc6a0fc9cc3b3c"
+    },
+    {
+      "path": "Game/MapElements/pig/elem14_stand.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem14_stand.img",
+      "bytes": 22211,
+      "sha256": "15ea7749f7d693153709c641e7f26a5f3a45e9f54c2874bbe793185abffd6271"
+    },
+    {
+      "path": "Game/MapElements/pig/elem10_die.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem10_die.img",
+      "bytes": 31904,
+      "sha256": "37a3f9a2bf243209b4979fd5858699d002f920f94a5c37183b88308400a7c668"
+    },
+    {
+      "path": "Game/MapElements/pig/elem11_die.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem11_die.img",
+      "bytes": 28796,
+      "sha256": "6f7898bf39910bfcd95c55cfaf3de7a0c76765f7dce3652d2463e55a4c80a153"
+    },
+    {
+      "path": "Game/MapElements/pig/elem12_die.img",
+      "source": "https://raw.githubusercontent.com/brangpd/qqt_map_editor_fin/eb6765e211100f9117cba45da131455e233bd85b/mapElem/pig/elem12_die.img",
+      "bytes": 29810,
+      "sha256": "915d4253a783167a921c41589a68eb186cc30683d5cf62e35df0a99b72b0f6a7"
+    }
+  ]
+}

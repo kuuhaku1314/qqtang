@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035DC8DD9882F7B3C00F66D1 /* QQTangMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31E1679EF5448FBB01F0DDE /* QQTangMacApp.swift */; };
+		0874067F62360EED0196EF85 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED595E78E168DB65DFB6ECB /* Models.swift */; };
+		111878B9A557CADC23F854B8 /* SectionSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64714836E885191256B562F0 /* SectionSelectView.swift */; };
+		184C8DF0A6655548AA88A6ED /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FBF8326106F58B07AD0F25 /* BattleView.swift */; };
+		1F0EBC659F0BF7836298D86D /* QQFDIMGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A068E19A63517344DCB963 /* QQFDIMGImage.swift */; };
+		278C5E02431322AAE6EC1B05 /* Legacy30 in Resources */ = {isa = PBXBuildFile; fileRef = D8DEB7CA83E60F2B17701287 /* Legacy30 */; };
+		352082BA0C889294E731AF5D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54ADC0C1EEDB79B60649D36 /* Theme.swift */; };
+		37D9917F3E54A576557DED9D /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3BC8E930B477B8187B1280 /* MusicPlayer.swift */; };
+		4116D113111DD1762F4A06AE /* QQMapLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1A49A57A2A2C9DACB97035 /* QQMapLayout.swift */; };
+		4379AF5E50E7404B36056E08 /* catalog in Resources */ = {isa = PBXBuildFile; fileRef = C862E3058DFCD4BDF8311B5B /* catalog */; };
+		596DFFA86C261D08DD6AA0F8 /* ProtocolConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898C872988DD6ADA5B24534 /* ProtocolConfig.swift */; };
+		5FF4FD2D8E425E21F042B958 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE8083036E3FD1522B9307 /* Records.swift */; };
+		7189D36E2697628648DB37CC /* GameServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC0D606956F25257BBF1F0A /* GameServer.swift */; };
+		7531EF489F96BD891E55E22F /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62109098FB74183D71FF8B6 /* GameSession.swift */; };
+		7960544F3BFDB6DDDED5D564 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F291C6ED0A26D6F177B601 /* RoomView.swift */; };
+		7F2540B39BB6239215D3832B /* LobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420C8F774459D0ED99DAD8F /* LobbyView.swift */; };
+		8A3E42B02D66C129D500762B /* BattleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CEE9B8D9032595E8AF8ED2 /* BattleScene.swift */; };
+		8D47904B182D155C937ECB78 /* MapCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525013D9AF1B077C0DE1BC30 /* MapCatalog.swift */; };
+		9A4AB50690B5A3116B80D91A /* QQTEA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4176E0E00BF40703D06C708 /* QQTEA.swift */; };
+		9BDF98FB0B949C5130CE858D /* GameDataLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF6BCBAA02D142ED661F715 /* GameDataLocator.swift */; };
+		9D526A76A5B98C1A9781EDB9 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 8C132BC9A1FBC58778899DDA /* GRDB */; };
+		9DBDEA844D5560EE9DDDE19B /* LegacyAssetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC8BE9A505DBA3840947B2 /* LegacyAssetStore.swift */; };
+		AD40E3346F6505DF7059F58D /* DirectoryServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE93A226C69C12835780A88A /* DirectoryServer.swift */; };
+		B59CB803C5564095DB439CAC /* PacketCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B1AF8FB49BA4D81A79D6C7 /* PacketCodec.swift */; };
+		BDC15FD1926433426788448F /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9033114BE4FAF71F6EB7E8FE /* DatabaseManager.swift */; };
+		BFB778B9A56B155612BA35AB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2028E4B7CE749B42D41C93 /* RootView.swift */; };
+		C8AC0574A0556306767149BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A037B8259C215C98A337527C /* Assets.xcassets */; };
+		CE29139C16B0B70B5EEC45A1 /* Legacy30Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B984C41A80D5AEEF4FA84F /* Legacy30Assets.swift */; };
+		D4BF6A0CB8C2838F291B124B /* LegacyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF3034C67EFADD3AF9AAF3 /* LegacyImageView.swift */; };
+		DF4FDE39CDE448444C6936FD /* Legacy43 in Resources */ = {isa = PBXBuildFile; fileRef = DC76F1FF6C9961943622519A /* Legacy43 */; };
+		E8999F95E61897B6CE4D5CA9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2F337FBC168FBDB8C6F7A3 /* LoginView.swift */; };
+		EB2C89577B7DF5A7017A9345 /* Opcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF5A806A07FB3044AED80C1 /* Opcode.swift */; };
+		EBC275052740E55BB484DEFA /* LocalRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B4BFABECBE25FB60522DCB /* LocalRuntime.swift */; };
+		EF9353113D71E3017E6EE691 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B3281A1F4E00514C9F047 /* SoundPlayer.swift */; };
+		F303149C3811CD08F4F3DB15 /* ProtocolClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCB4F0DA8876E9A327DF004 /* ProtocolClient.swift */; };
+		F7CBE62AC2D3C377C57A3857 /* Legacy43Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032ACE0B215877CBD86C221F /* Legacy43Assets.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		032ACE0B215877CBD86C221F /* Legacy43Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legacy43Assets.swift; sourceTree = "<group>"; };
+		0C2F337FBC168FBDB8C6F7A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1898C872988DD6ADA5B24534 /* ProtocolConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolConfig.swift; sourceTree = "<group>"; };
+		25CC8BE9A505DBA3840947B2 /* LegacyAssetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyAssetStore.swift; sourceTree = "<group>"; };
+		2C3BC8E930B477B8187B1280 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		2EF6BCBAA02D142ED661F715 /* GameDataLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataLocator.swift; sourceTree = "<group>"; };
+		36CEE9B8D9032595E8AF8ED2 /* BattleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleScene.swift; sourceTree = "<group>"; };
+		3E7B3281A1F4E00514C9F047 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		4EF5A806A07FB3044AED80C1 /* Opcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opcode.swift; sourceTree = "<group>"; };
+		525013D9AF1B077C0DE1BC30 /* MapCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCatalog.swift; sourceTree = "<group>"; };
+		53FBF8326106F58B07AD0F25 /* BattleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
+		5420C8F774459D0ED99DAD8F /* LobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyView.swift; sourceTree = "<group>"; };
+		5F1A49A57A2A2C9DACB97035 /* QQMapLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQMapLayout.swift; sourceTree = "<group>"; };
+		64714836E885191256B562F0 /* SectionSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSelectView.swift; sourceTree = "<group>"; };
+		64B4BFABECBE25FB60522DCB /* LocalRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRuntime.swift; sourceTree = "<group>"; };
+		73F291C6ED0A26D6F177B601 /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		77DC672B0B51DD2A157C4E43 /* QQTangMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQTangMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FE8083036E3FD1522B9307 /* Records.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
+		7BCB4F0DA8876E9A327DF004 /* ProtocolClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolClient.swift; sourceTree = "<group>"; };
+		7ED595E78E168DB65DFB6ECB /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		85B1AF8FB49BA4D81A79D6C7 /* PacketCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketCodec.swift; sourceTree = "<group>"; };
+		9033114BE4FAF71F6EB7E8FE /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		A037B8259C215C98A337527C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A31E1679EF5448FBB01F0DDE /* QQTangMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQTangMacApp.swift; sourceTree = "<group>"; };
+		AE93A226C69C12835780A88A /* DirectoryServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryServer.swift; sourceTree = "<group>"; };
+		B1B984C41A80D5AEEF4FA84F /* Legacy30Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legacy30Assets.swift; sourceTree = "<group>"; };
+		BEC0D606956F25257BBF1F0A /* GameServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameServer.swift; sourceTree = "<group>"; };
+		C0FF3034C67EFADD3AF9AAF3 /* LegacyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyImageView.swift; sourceTree = "<group>"; };
+		C3A068E19A63517344DCB963 /* QQFDIMGImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQFDIMGImage.swift; sourceTree = "<group>"; };
+		C862E3058DFCD4BDF8311B5B /* catalog */ = {isa = PBXFileReference; lastKnownFileType = folder; name = catalog; path = GameData/catalog; sourceTree = SOURCE_ROOT; };
+		D4176E0E00BF40703D06C708 /* QQTEA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQTEA.swift; sourceTree = "<group>"; };
+		D8DEB7CA83E60F2B17701287 /* Legacy30 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Legacy30; path = QQTangMac/Resources/Legacy30; sourceTree = SOURCE_ROOT; };
+		DC76F1FF6C9961943622519A /* Legacy43 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Legacy43; path = QQTangMac/Resources/Legacy43; sourceTree = SOURCE_ROOT; };
+		DD2028E4B7CE749B42D41C93 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		E54ADC0C1EEDB79B60649D36 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E62109098FB74183D71FF8B6 /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2F1C6950A17B1CEF524DCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D526A76A5B98C1A9781EDB9 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04438B5F1EA3E7EB5DC3BDF8 = {
+			isa = PBXGroup;
+			children = (
+				DAD159936D65C600DEFEB190 /* GameData */,
+				2DD7BAD7A9DCD13FE54F0E1A /* QQTangMac */,
+				B6B64F7C5775EB78989B6A45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07204C0BE505BFCFF2B4CC94 /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				2EF6BCBAA02D142ED661F715 /* GameDataLocator.swift */,
+				B1B984C41A80D5AEEF4FA84F /* Legacy30Assets.swift */,
+				032ACE0B215877CBD86C221F /* Legacy43Assets.swift */,
+				25CC8BE9A505DBA3840947B2 /* LegacyAssetStore.swift */,
+				C0FF3034C67EFADD3AF9AAF3 /* LegacyImageView.swift */,
+				525013D9AF1B077C0DE1BC30 /* MapCatalog.swift */,
+				2C3BC8E930B477B8187B1280 /* MusicPlayer.swift */,
+				1898C872988DD6ADA5B24534 /* ProtocolConfig.swift */,
+				C3A068E19A63517344DCB963 /* QQFDIMGImage.swift */,
+				5F1A49A57A2A2C9DACB97035 /* QQMapLayout.swift */,
+				3E7B3281A1F4E00514C9F047 /* SoundPlayer.swift */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
+		17A2CE79E24962015C9A850C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A037B8259C215C98A337527C /* Assets.xcassets */,
+				D8DEB7CA83E60F2B17701287 /* Legacy30 */,
+				DC76F1FF6C9961943622519A /* Legacy43 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1FCBB55AD304CF263E0C1436 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0C2F337FBC168FBDB8C6F7A3 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		25EA38D54996FD3635E28F6E /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				E62109098FB74183D71FF8B6 /* GameSession.swift */,
+				7ED595E78E168DB65DFB6ECB /* Models.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		2DD7BAD7A9DCD13FE54F0E1A /* QQTangMac */ = {
+			isa = PBXGroup;
+			children = (
+				5728FE769FA433064E8E3C97 /* App */,
+				66F9D62D25B705321B9F2FD9 /* Features */,
+				07204C0BE505BFCFF2B4CC94 /* Legacy */,
+				7B16F11923CB891BCDD468F9 /* Persistence */,
+				370D6330FEF3DC3B1B18BE44 /* Protocol */,
+				17A2CE79E24962015C9A850C /* Resources */,
+				25EA38D54996FD3635E28F6E /* Session */,
+			);
+			path = QQTangMac;
+			sourceTree = "<group>";
+		};
+		370D6330FEF3DC3B1B18BE44 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AE93A226C69C12835780A88A /* DirectoryServer.swift */,
+				BEC0D606956F25257BBF1F0A /* GameServer.swift */,
+				64B4BFABECBE25FB60522DCB /* LocalRuntime.swift */,
+				4EF5A806A07FB3044AED80C1 /* Opcode.swift */,
+				85B1AF8FB49BA4D81A79D6C7 /* PacketCodec.swift */,
+				7BCB4F0DA8876E9A327DF004 /* ProtocolClient.swift */,
+				D4176E0E00BF40703D06C708 /* QQTEA.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		5728FE769FA433064E8E3C97 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A31E1679EF5448FBB01F0DDE /* QQTangMacApp.swift */,
+				DD2028E4B7CE749B42D41C93 /* RootView.swift */,
+				E54ADC0C1EEDB79B60649D36 /* Theme.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		66F9D62D25B705321B9F2FD9 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8E3BD6A013AD76C97562ECCD /* Battle */,
+				EF7BAE738BA064A884E8D834 /* Lobby */,
+				1FCBB55AD304CF263E0C1436 /* Login */,
+				791F16AA65641D12AC42D1DE /* Room */,
+				E50C4B05A01F191C411B6ED6 /* Section */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		791F16AA65641D12AC42D1DE /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				73F291C6ED0A26D6F177B601 /* RoomView.swift */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		7B16F11923CB891BCDD468F9 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				9033114BE4FAF71F6EB7E8FE /* DatabaseManager.swift */,
+				79FE8083036E3FD1522B9307 /* Records.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		8E3BD6A013AD76C97562ECCD /* Battle */ = {
+			isa = PBXGroup;
+			children = (
+				36CEE9B8D9032595E8AF8ED2 /* BattleScene.swift */,
+				53FBF8326106F58B07AD0F25 /* BattleView.swift */,
+			);
+			path = Battle;
+			sourceTree = "<group>";
+		};
+		B6B64F7C5775EB78989B6A45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77DC672B0B51DD2A157C4E43 /* QQTangMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAD159936D65C600DEFEB190 /* GameData */ = {
+			isa = PBXGroup;
+			children = (
+				C862E3058DFCD4BDF8311B5B /* catalog */,
+			);
+			path = GameData;
+			sourceTree = "<group>";
+		};
+		E50C4B05A01F191C411B6ED6 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				64714836E885191256B562F0 /* SectionSelectView.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		EF7BAE738BA064A884E8D834 /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				5420C8F774459D0ED99DAD8F /* LobbyView.swift */,
+			);
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D403CCBE886F9424E9B22642 /* QQTangMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86C35BAD5CE82E2B3ECCCBCE /* Build configuration list for PBXNativeTarget "QQTangMac" */;
+			buildPhases = (
+				FCFB58CD9FE0E6A92B4049D6 /* Sources */,
+				67D24396C2036BB52A3A4ABD /* Resources */,
+				C2F1C6950A17B1CEF524DCFD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QQTangMac;
+			packageProductDependencies = (
+				8C132BC9A1FBC58778899DDA /* GRDB */,
+			);
+			productName = QQTangMac;
+			productReference = 77DC672B0B51DD2A157C4E43 /* QQTangMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64D99F4E03E910E65BCDE2CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 03AE3668AE17AD5147534969 /* Build configuration list for PBXProject "QQTangMac" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 04438B5F1EA3E7EB5DC3BDF8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C1C6C2014318D8E3FC607FF6 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B6B64F7C5775EB78989B6A45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D403CCBE886F9424E9B22642 /* QQTangMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67D24396C2036BB52A3A4ABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8AC0574A0556306767149BC /* Assets.xcassets in Resources */,
+				278C5E02431322AAE6EC1B05 /* Legacy30 in Resources */,
+				DF4FDE39CDE448444C6936FD /* Legacy43 in Resources */,
+				4379AF5E50E7404B36056E08 /* catalog in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCFB58CD9FE0E6A92B4049D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3E42B02D66C129D500762B /* BattleScene.swift in Sources */,
+				184C8DF0A6655548AA88A6ED /* BattleView.swift in Sources */,
+				BDC15FD1926433426788448F /* DatabaseManager.swift in Sources */,
+				AD40E3346F6505DF7059F58D /* DirectoryServer.swift in Sources */,
+				9BDF98FB0B949C5130CE858D /* GameDataLocator.swift in Sources */,
+				7189D36E2697628648DB37CC /* GameServer.swift in Sources */,
+				7531EF489F96BD891E55E22F /* GameSession.swift in Sources */,
+				CE29139C16B0B70B5EEC45A1 /* Legacy30Assets.swift in Sources */,
+				F7CBE62AC2D3C377C57A3857 /* Legacy43Assets.swift in Sources */,
+				9DBDEA844D5560EE9DDDE19B /* LegacyAssetStore.swift in Sources */,
+				D4BF6A0CB8C2838F291B124B /* LegacyImageView.swift in Sources */,
+				7F2540B39BB6239215D3832B /* LobbyView.swift in Sources */,
+				EBC275052740E55BB484DEFA /* LocalRuntime.swift in Sources */,
+				E8999F95E61897B6CE4D5CA9 /* LoginView.swift in Sources */,
+				8D47904B182D155C937ECB78 /* MapCatalog.swift in Sources */,
+				0874067F62360EED0196EF85 /* Models.swift in Sources */,
+				37D9917F3E54A576557DED9D /* MusicPlayer.swift in Sources */,
+				EB2C89577B7DF5A7017A9345 /* Opcode.swift in Sources */,
+				B59CB803C5564095DB439CAC /* PacketCodec.swift in Sources */,
+				F303149C3811CD08F4F3DB15 /* ProtocolClient.swift in Sources */,
+				596DFFA86C261D08DD6AA0F8 /* ProtocolConfig.swift in Sources */,
+				1F0EBC659F0BF7836298D86D /* QQFDIMGImage.swift in Sources */,
+				4116D113111DD1762F4A06AE /* QQMapLayout.swift in Sources */,
+				9A4AB50690B5A3116B80D91A /* QQTEA.swift in Sources */,
+				035DC8DD9882F7B3C00F66D1 /* QQTangMacApp.swift in Sources */,
+				5FF4FD2D8E425E21F042B958 /* Records.swift in Sources */,
+				7960544F3BFDB6DDDED5D564 /* RoomView.swift in Sources */,
+				BFB778B9A56B155612BA35AB /* RootView.swift in Sources */,
+				111878B9A557CADC23F854B8 /* SectionSelectView.swift in Sources */,
+				EF9353113D71E3017E6EE691 /* SoundPlayer.swift in Sources */,
+				352082BA0C889294E731AF5D /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		15F87107004206FCE66B7E20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "QQ堂";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_LSMinimumSystemVersion = 14.0;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Independent remake. Not affiliated with Tencent.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qqtangmac.client;
+				PRODUCT_NAME = QQTangMac;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		5001B325A1B7FB4404E22C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "QQ堂";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_LSMinimumSystemVersion = 14.0;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Independent remake. Not affiliated with Tencent.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qqtangmac.client;
+				PRODUCT_NAME = QQTangMac;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		64E048E4E578D1A2059069C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D34763889CA2F31618E4E6C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03AE3668AE17AD5147534969 /* Build configuration list for PBXProject "QQTangMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34763889CA2F31618E4E6C0 /* Debug */,
+				64E048E4E578D1A2059069C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		86C35BAD5CE82E2B3ECCCBCE /* Build configuration list for PBXNativeTarget "QQTangMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F87107004206FCE66B7E20 /* Debug */,
+				5001B325A1B7FB4404E22C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1C6C2014318D8E3FC607FF6 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C132BC9A1FBC58778899DDA /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1C6C2014318D8E3FC607FF6 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 64D99F4E03E910E65BCDE2CD /* Project object */;
+}

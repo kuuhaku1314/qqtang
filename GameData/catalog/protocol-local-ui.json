@@ -1,0 +1,100 @@
+{
+  "capture_root": "runtime/captures/directory-local-ui",
+  "log_file": "runtime/logs/server-local.jsonl",
+  "client_root": "../runtime/client-patched",
+  "database_path": "../runtime/data/qqtang.sqlite",
+  "seed_uin": 1000001,
+  "adventure_rules_path": "adventure-rules.json",
+  "adventure_rewards": {
+    "npc_kill_score": 10,
+    "player_rescue_score": 10,
+    "item_pickup_score": 10
+  },
+  "max_packet_bytes": 1048576,
+  "idle_timeout_ms": 300000,
+  "player_profile": {
+    "player_id": 1,
+    "identity": 0,
+    "section_id": 1,
+    "room_count": 0,
+    "minimum_room_id": 1,
+    "tutorial_completed": true,
+    "game_info": {
+      "wins": 5200,
+      "losses": 520,
+      "draws": 52,
+      "organization_id": 0,
+      "points": 1621150000,
+      "money": 99999999,
+      "degree": 179,
+      "role_id": 1,
+      "pet_id": 0,
+      "extended_wins": 520,
+      "extended_losses": 52,
+      "extended_draws": 5,
+      "extended_points": 428326799
+    },
+    "inventory": [
+      {
+        "id": 99,
+        "quantity": 500
+      },
+      {
+        "id": 20043,
+        "quantity": 500
+      }
+    ],
+    "section_mode": 0,
+    "extra_section_mode_info": 0,
+    "section_identity": 0,
+    "reason": "",
+    "honor": 0,
+    "task_count": 0,
+    "task_grade": 0,
+    "task_game_count": 0,
+    "task_game_finished": 0
+  },
+  "listeners": [
+    {
+      "name": "directory-http-local-ui",
+      "network": "tcp",
+      "address": "127.0.0.1:18080",
+      "response": {
+        "after_receive_file": "../runtime/packets/directory-response-east-official.bin",
+        "max_sends": 1
+      }
+    },
+    {
+      "name": "directory-tls-capture",
+      "network": "tcp",
+      "address": "127.0.0.1:18443",
+      "response": {}
+    },
+    {
+      "name": "ca-secondary-capture",
+      "network": "tcp",
+      "address": "127.0.0.1:17000",
+      "response": {}
+    },
+    {
+      "name": "directory-game-capture",
+      "network": "tcp",
+      "address": "127.0.0.1:18000",
+      "response": {
+        "qqt_login_success": true,
+        "qqt_room_list_empty": true,
+        "qqt_player_list_empty": true,
+        "qqt_create_room_success": true,
+        "qqt_start_game_success": true,
+        "qqt_adventure_game": true,
+        "qqt_game_event_relay": true
+      }
+    },
+    {
+      "name": "p2p-capture",
+      "network": "udp",
+      "address": "127.0.0.1:18000",
+      "response": {}
+    }
+  ]
+}

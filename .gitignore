@@ -1,0 +1,15 @@
+# Xcode / build products
+DerivedData/
+.build/
+*.xcuserstate
+xcuserdata/
+
+# macOS
+.DS_Store
+
+# 调试产物
+.playwright-mcp/
+
+# 原版客户端大体积解包（可由 .vendor/QQTang-Local.rar 或官方安装包重建）
+.vendor/QQTang-Local/
+.vendor/QQTang-Local.rar

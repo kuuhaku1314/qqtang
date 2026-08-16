@@ -1,0 +1,52 @@
+name: QQTangMac
+options:
+  bundleIdPrefix: com.qqtangmac
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  defaultConfig: Debug
+packages:
+  GRDB:
+    url: https://github.com/groue/GRDB.swift
+    from: "7.4.0"
+targets:
+  QQTangMac:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: QQTangMac
+        excludes:
+          - "Resources/**"
+      - path: QQTangMac/Resources/Assets.xcassets
+      - path: QQTangMac/Resources/Legacy30
+        buildPhase: resources
+        type: folder
+      - path: QQTangMac/Resources/Legacy43
+        buildPhase: resources
+        type: folder
+      - path: GameData/catalog
+        buildPhase: resources
+        type: folder
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.qqtangmac.client
+        PRODUCT_NAME: QQTangMac
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: QQ堂
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.games
+        INFOPLIST_KEY_NSHumanReadableCopyright: Independent remake. Not affiliated with Tencent.
+        INFOPLIST_KEY_LSMinimumSystemVersion: "14.0"
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+        COMBINE_HIDPI_IMAGES: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SWIFT_EMIT_LOC_STRINGS: NO
+    dependencies:
+      - package: GRDB
+        product: GRDB
