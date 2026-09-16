@@ -20,6 +20,11 @@ go build ./cmd/...
 - .NET Framework 64 位 C# 编译器；
 - 构建 Linux 二进制时所需的 AMD64、ARM64 交叉 GCC。
 
+只需要 Windows 产物时，可运行
+`scripts\build-release.ps1 -WindowsOnly`：跳过 Linux ONNX Runtime 下载、
+Linux 服务端交叉编译及 Linux 运行时/启动脚本载荷，因此不需要上述交叉 GCC；
+Windows AMD64 GCC 仍然是必需的（Windows 服务端的 ONNX Runtime CGO 构建）。
+
 两个静态客户端适配器的 NASM 源码位于 `scripts/asm/`，已生成的 4 KiB
 载荷随 Go 源码一同版本化，普通构建不要求安装 NASM。修改汇编后安装 NASM 并运行：
 
