@@ -202,9 +202,11 @@ namespace QQTangLauncher
             {
                 var target = clientIP.Text.Trim();
                 IPAddress parsed;
-                if (!IPAddress.TryParse(target, out parsed) || parsed.AddressFamily != AddressFamily.InterNetwork)
+                var targetIsIPv4 = IPAddress.TryParse(target, out parsed) && parsed.AddressFamily == AddressFamily.InterNetwork;
+                var targetIsDNSName = !targetIsIPv4 && Uri.CheckHostName(target) == UriHostNameType.Dns && target.Contains(".");
+                if (!targetIsIPv4 && !targetIsDNSName)
                 {
-                    ShowFailure("服务器地址必须是有效的 IPv4 地址。");
+                    ShowFailure("服务器地址必须是有效的 IPv4 地址或域名。");
                     return;
                 }
                 await RunOperation(
