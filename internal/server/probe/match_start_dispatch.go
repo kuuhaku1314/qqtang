@@ -400,9 +400,15 @@ func (server *Server) prepareCompetitiveRoomMatchStart(session *connectionSessio
 	if !ok {
 		return prepared, fmt.Errorf("competitive map %d has no registered rule contract for %s", selectedMap.ID, selectedMap.Rule)
 	}
-	activation, err := server.resolveCompetitiveMatchActivation(session, selectedMap, participants)
-	if err != nil {
-		return prepared, err
+	var activation competitiveMatchActivation
+	// The solo card is part of Boss eligibility, not a veto after choosing a
+	// Boss. Without that permission, an AI card may still authorize a normal
+	// match on this map. Multiplayer Boss qualification needs no solo card.
+	if humanCount > 1 || profileOwnsActiveUncollectedItem(session.Profile, game.SinglePlayerBossCardItemID) {
+		activation, err = server.resolveCompetitiveMatchActivation(session, selectedMap, participants)
+		if err != nil {
+			return prepared, err
+		}
 	}
 	var aiFill competitiveAIFillPlan
 	if aiAuthorized && !activation.Active {
@@ -411,9 +417,6 @@ func (server *Server) prepareCompetitiveRoomMatchStart(session *connectionSessio
 			return prepared, err
 		}
 		participants = append(participants, aiFill.Participants...)
-	}
-	if humanCount == 1 && activation.Active && !profileOwnsActiveUncollectedItem(session.Profile, game.SinglePlayerBossCardItemID) {
-		return prepared, fmt.Errorf("single-player competitive Boss map %d requires item %d", selectedMap.ID, game.SinglePlayerBossCardItemID)
 	}
 	if len(participants) == 1 && !activation.Active {
 		return prepared, fmt.Errorf("single-player competitive map %d does not satisfy any Boss candidate", selectedMap.ID)

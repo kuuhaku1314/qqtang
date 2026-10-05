@@ -20,6 +20,15 @@ func competitiveTimeoutTiming(roundDurationMS uint32) (time.Duration, uint32) {
 }
 
 func (server *Server) replaceCompetitiveBattle(gameID, mapID uint32, arbitratorID uint16, participants []match.CompetitiveParticipant, config match.CompetitiveRuleConfig) error {
+	if config.Objective == match.CompetitiveObjectiveSculpture && server.mapCatalog != nil {
+		if selected, ok := server.mapCatalog.CompetitiveMap(mapID); ok {
+			// Rule6 creates its statues from the fourth native coordinate
+			// table; they are not static collision-layer map elements.
+			for _, cell := range selected.ObjectiveCells {
+				config.SculptureCells = append(config.SculptureCells, match.CompetitiveSculptureCell{Row: cell.Row, Col: cell.Col})
+			}
+		}
+	}
 	battle, err := match.NewCompetitiveBattleWithRuleConfig(gameID, mapID, arbitratorID, participants, config)
 	if err != nil {
 		return err

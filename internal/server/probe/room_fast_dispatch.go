@@ -413,6 +413,11 @@ func normalizeCompetitiveObjectiveFastPackages(packages []game.GameplayDataPacka
 		clone.Messages = make([]game.BattleMessageData, 0, len(packet.Messages))
 		for index, message := range packet.Messages {
 			keep := true
+			if message.DataID == game.NotifyBombExplode && battle.UsesSculptureObjective() {
+				if err := recordCompetitiveSculptureExplosion(battle, packet.PlayerID, game.GameEvent{Schema: game.NotifyBombExplode, Body: message.Data}); err != nil {
+					return nil, nil, err
+				}
+			}
 			if message.DataID == game.NotifyPlayerGetBun || message.DataID == game.NotifyPlayerPutBun {
 				if packet.PlayerID != battle.ArbitratorPlayerID() {
 					return nil, nil, fmt.Errorf("objective fast-notify source %d is not arbitrator %d", packet.PlayerID, battle.ArbitratorPlayerID())

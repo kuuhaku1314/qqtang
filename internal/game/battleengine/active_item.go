@@ -269,6 +269,7 @@ func (engine *Engine) resolveFieldObjectContacts() []Event {
 				Kind: EventFieldObjectTriggered, TimeMS: engine.elapsedMS, PlayerID: object.OwnerID,
 				TargetID: actor.PlayerID, Cell: object.Cell, Position: actor.Position,
 				ActionID: object.ActionID, ObjectID: object.ID, ItemChange: change,
+				MovementStatusBefore: actor.MovementStatus, MovementRemainingBeforeMS: engine.movementRemainingMS(actor),
 			})
 			switch object.ActionID {
 			case 41:
@@ -314,6 +315,7 @@ func (engine *Engine) resolveFieldObjectContacts() []Event {
 					break
 				}
 				engine.installMovementStatus(actor, MovementStatusSlow)
+				events[triggerIndex].EffectExpiresAt = actor.MovementStatusExpiresAt
 				events = append(events, Event{Kind: EventMovementStatusStarted, TimeMS: engine.elapsedMS, PlayerID: actor.PlayerID, Cell: actor.Position.Cell(), Position: actor.Position, MovementStatus: MovementStatusSlow, EffectExpiresAt: actor.MovementStatusExpiresAt})
 				consumed = true
 			}
@@ -375,6 +377,7 @@ func (engine *Engine) ApplyVerifiedFieldObjectContact(playerID uint16, actionID 
 		status = MovementStatusSlow
 	}
 	change := engine.beginItemChange(actor)
+	beforeStatus, beforeRemaining := actor.MovementStatus, engine.movementRemainingMS(actor)
 	engine.installMovementStatus(actor, status)
 	engine.finishItemChange(change, actor)
 	events := []Event{
@@ -382,6 +385,8 @@ func (engine *Engine) ApplyVerifiedFieldObjectContact(playerID uint16, actionID 
 			Kind: EventFieldObjectTriggered, TimeMS: engine.elapsedMS,
 			PlayerID: object.OwnerID, TargetID: playerID, Cell: object.Cell,
 			Position: position, ActionID: object.ActionID, ObjectID: object.ID, ItemChange: change,
+			MovementStatusBefore: beforeStatus, MovementRemainingBeforeMS: beforeRemaining,
+			EffectExpiresAt: actor.MovementStatusExpiresAt,
 		},
 		{
 			Kind: EventMovementStatusStarted, TimeMS: engine.elapsedMS,
@@ -417,4 +422,12 @@ func (engine *Engine) installAuthoritativeFieldObject(actionID uint8, cell Cell)
 	}
 	engine.nextFieldObjectID++
 	engine.fieldObjects = append(engine.fieldObjects, object)
+}
+
+// movementRemainingMS captures the pre-contact duration without allocating a full item snapshot.
+func (engine *Engine) movementRemainingMS(actor *Actor) uint32 {
+	if actor.MovementStatusExpiresAt > engine.elapsedMS {
+		return actor.MovementStatusExpiresAt - engine.elapsedMS
+	}
+	return 0
 }

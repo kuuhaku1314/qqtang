@@ -13,6 +13,13 @@
 /build-assets/pytools/uncompyle6-*.dist-info/
 
 # Generated products and local state.
+/ai-training/
+/evidence/
+/.agents/
+/.codex/
+/.claude/
+/AGENTS.md
+/CLAUDE.md
 /release/
 /runtime/
 /.cache/

@@ -184,6 +184,16 @@ func (server *Server) handleGameEventMessage(config ListenerConfig, session *con
 							followUpResult = fmt.Sprintf("qqt_game_event_notify_native_player_%d_use_bomb_%d", use.PlayerID, use.BombID)
 						}
 					}
+				case game.NotifyBombExplode:
+					if battle, battleErr := server.competitiveBattle(session.CurrentGameID); battleErr == nil && battle.UsesSculptureObjective() {
+						relayErr = recordCompetitiveSculptureExplosion(battle, session.Profile.PlayerID, event)
+					}
+					if relayErr == nil {
+						response, event, relayErr = game.BuildLocalGameEventRelay(data)
+					}
+					if relayErr == nil {
+						result = fmt.Sprintf("qqt_game_event_ack_native_0x%04X", event.Schema)
+					}
 				case game.RequestEatBomb:
 					var action game.EatBombAction
 					action, relayErr = game.ParseEatBombAction(event)

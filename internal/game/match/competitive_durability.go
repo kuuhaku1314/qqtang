@@ -19,6 +19,11 @@ type competitiveDurabilityState struct {
 	// Some rule-7/8 damage producers precede 0x0FA7 with 0x10F4 while
 	// roaming rule NPCs emit only 0x0FA7. Pair the two forms when possible.
 	pendingReports map[uint16]byte
+	// FUN_00601fec copies Time/PosX/PosY from harm to its death report.
+	// Remember deaths which already consumed a layer before that harm's
+	// reliable mirror arrives, so the native producer's send order cannot
+	// turn one hit into two server-side life charges.
+	deathsBeforeHarm map[competitiveDurabilityDeathKey]struct{}
 }
 
 type competitiveDurabilityDeathKey struct {
@@ -30,10 +35,11 @@ type competitiveDurabilityDeathKey struct {
 func newCompetitiveDurabilityState(participants []CompetitiveParticipant, limit byte) *competitiveDurabilityState {
 	state := &competitiveDurabilityState{
 		limit: limit, remaining: make(map[uint16]byte, len(participants)),
-		deathConfirmed: make(map[uint16]bool, len(participants)),
-		seen:           make(map[competitiveHarmEventKey]struct{}),
-		seenDeaths:     make(map[competitiveDurabilityDeathKey]struct{}),
-		pendingReports: make(map[uint16]byte, len(participants)),
+		deathConfirmed:   make(map[uint16]bool, len(participants)),
+		seen:             make(map[competitiveHarmEventKey]struct{}),
+		seenDeaths:       make(map[competitiveDurabilityDeathKey]struct{}),
+		pendingReports:   make(map[uint16]byte, len(participants)),
+		deathsBeforeHarm: make(map[competitiveDurabilityDeathKey]struct{}),
 	}
 	for _, participant := range participants {
 		state.remaining[participant.PlayerID] = limit
@@ -96,7 +102,18 @@ func (battle *CompetitiveBattle) RecordNativeHarm(playerID uint16, clientTime ui
 		return remaining, false, nil
 	}
 	battle.nativeDurability.seen[key] = struct{}{}
-	if battle.nativeDurability.pendingReports[playerID] < ^byte(0) {
+	if !isAvatar {
+		hit := competitiveDurabilityDeathKey{playerID: playerID, clientTime: clientTime, posX: posX, posY: posY}
+		if _, counted := battle.nativeDurability.deathsBeforeHarm[hit]; counted {
+			delete(battle.nativeDurability.deathsBeforeHarm, hit)
+			// This is still the first harm record. Only its server-side life
+			// charge was already applied; native Type-2 owns the peer scene.
+			return remaining, true, nil
+		}
+	}
+	// The native consumer returns before emitting 0x0FA7 for avatar damage.
+	// A shell hit must not reserve a report from a later body/NPC hit.
+	if !isAvatar && battle.nativeDurability.pendingReports[playerID] < ^byte(0) {
 		battle.nativeDurability.pendingReports[playerID]++
 	}
 	if !isAvatar && remaining > 0 {
@@ -136,6 +153,7 @@ func (battle *CompetitiveBattle) RecordNativeDurabilityDeath(playerID uint16, cl
 	} else if remaining > 0 {
 		remaining--
 		battle.nativeDurability.remaining[playerID] = remaining
+		battle.nativeDurability.deathsBeforeHarm[key] = struct{}{}
 	}
 	if remaining != 0 {
 		return battle.resolution(false), false, nil

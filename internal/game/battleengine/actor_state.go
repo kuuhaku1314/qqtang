@@ -306,6 +306,13 @@ func (engine *Engine) trapDuration(actor *Actor) uint32 {
 }
 
 func (engine *Engine) expireTraps() []Event {
+	if engine.rules.NativeOutcomeAuthority {
+		// Keep TrapExpiresAt visible for the policy countdown, but let the
+		// elected native client confirm death and its exact scatter. Committing
+		// this local timer first would invent drops and make the later native
+		// fact look like a duplicate death, leaving live item locations wrong.
+		return nil
+	}
 	if engine.rules.TrapDurationMS == 0 && engine.rules.VirtualTrapDurationMS == 0 {
 		return nil
 	}

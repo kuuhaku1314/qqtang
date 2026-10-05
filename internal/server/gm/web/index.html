@@ -7,132 +7,172 @@
   <link rel="stylesheet" href="/gm/app.css">
 </head>
 <body>
-  <header class="topbar">
-    <div>
-      <p class="eyebrow">QQTang Local Restore</p>
-      <h1>本地 GM 工具</h1>
-      <p class="subtitle">账号、人物与背包可视化管理。修改后请重新登录客户端生效。</p>
-    </div>
-    <div class="top-actions">
-      <div id="health" class="health pending"><span></span>正在连接服务</div>
-    </div>
-  </header>
-
-  <main class="layout">
-    <aside class="accounts panel">
-      <div class="panel-title">
-        <div><p class="eyebrow">Accounts</p><h2>本地账号</h2></div>
-        <button id="new-account" class="primary compact">新建</button>
+  <div class="app">
+    <aside class="sidebar panel">
+      <div class="brand">
+        <span class="sugar-mark" aria-hidden="true">糖</span>
+        <div><p class="eyebrow">QQTang Local Restore</p><h1>本地 GM 工具</h1></div>
       </div>
-      <label class="search-line">
-        <span>搜索账号</span>
-        <input id="account-search" type="search" placeholder="QQ号或昵称">
+      <div class="panel-title">
+        <div><p class="eyebrow">Accounts</p><h2>本地账号 <em id="account-total">0</em></h2></div>
+        <button id="new-account" type="button" class="primary compact">新建</button>
+      </div>
+      <label class="search-field">
+        <span class="sr-only">搜索账号</span>
+        <input id="account-search" type="search" placeholder="搜索 QQ号或昵称">
       </label>
       <div id="account-list" class="account-list" aria-live="polite"></div>
+      <div id="health" class="health pending"><span></span>正在连接服务</div>
     </aside>
 
-    <section class="workspace">
+    <main class="main">
       <div id="empty-state" class="empty panel">
-        <div class="empty-mark">糖</div>
+        <span class="sugar-mark large" aria-hidden="true">糖</span>
         <h2>选择一个账号开始管理</h2>
-        <p>可以修改人物属性、搜索原版物品图标并直接加入背包。</p>
+        <p>可以修改人物属性、管理背包和宠物，或从原版物品目录直接添加物品。</p>
+        <button id="empty-create" type="button" class="secondary">新建账号</button>
       </div>
 
-      <div id="account-workspace" class="hidden">
-        <section class="panel profile-panel">
-          <div class="panel-title profile-heading">
-            <div><p class="eyebrow">Profile</p><h2 id="profile-title">人物资料</h2></div>
-            <div class="toolbar">
-              <button id="refresh-account" class="secondary">刷新</button>
-              <button id="save-profile" class="primary">保存资料</button>
-              <button id="delete-account" class="danger">删除账号</button>
-            </div>
+      <div id="account-workspace" class="workspace hidden">
+        <header class="account-hero panel">
+          <span id="hero-avatar" class="avatar xl" aria-hidden="true"></span>
+          <div class="hero-copy">
+            <p class="eyebrow">Profile</p>
+            <h2 id="profile-title">人物资料</h2>
+            <p id="hero-meta" class="hero-meta"></p>
           </div>
-          <form id="profile-form" class="form-grid">
-            <label>QQ号码<input id="profile-uin" disabled></label>
-            <label>协议 PlayerID<input id="profile-player-id" disabled></label>
-            <label>昵称<input id="profile-nickname" maxlength="20" required></label>
-            <label>性别<select id="profile-gender"><option value="0">女性</option><option value="1">男性</option></select></label>
-            <label>竞技等级<select id="profile-degree" required></select><span id="profile-degree-detail" class="field-help"></span></label>
-            <label>竞技积分<input id="profile-points" type="number" min="0" max="1631150000" required><span id="profile-points-range" class="field-help"></span></label>
-            <label>探险等级<select id="profile-adventure-level" required></select><span class="field-help">由探险经验决定，不占用独立协议字段</span></label>
-            <label>探险经验<input id="profile-adventure-points" type="number" min="0" max="428326799" required><span id="profile-adventure-range" class="field-help"></span></label>
-            <label>QQ糖币<input id="profile-money" type="number" min="0" max="4294967295" required></label>
-            <label>身份<select id="profile-identity" required></select><span class="field-help">紫钻对应客户端身份位 0x2000（8192）</span></label>
-            <label>登录密码
-              <span class="password-control"><input id="profile-password" type="password" minlength="6" maxlength="16" pattern="[!-~]{6,16}" autocomplete="new-password" placeholder="••••••"><button id="toggle-profile-password" type="button" class="secondary compact">显示</button></span>
-              <span class="field-help">留空表示不修改。服务端不保存明文，因此原密码不可回显。</span>
-            </label>
-            <label>胜场<input id="profile-wins" type="number" min="0" max="4294967295" required></label>
-            <label>败场<input id="profile-losses" type="number" min="0" max="4294967295" required></label>
-            <label>平场<input id="profile-draws" type="number" min="0" max="4294967295" required></label>
-            <label class="check"><input id="profile-tutorial" type="checkbox"><span>已完成新手教程</span></label>
+          <div class="hero-actions">
+            <button id="refresh-account" type="button" class="secondary compact">刷新</button>
+            <button id="delete-account" type="button" class="ghost danger compact">删除账号</button>
+          </div>
+          <dl id="hero-stats" class="hero-stats"></dl>
+        </header>
+
+        <nav class="tabs" role="tablist" aria-label="账号管理">
+          <button type="button" class="tab active" role="tab" data-tab="profile" aria-selected="true">人物资料<span id="profile-dirty-dot" class="dirty-dot hidden" title="有未保存的修改"></span></button>
+          <button type="button" class="tab" role="tab" data-tab="inventory" aria-selected="false" tabindex="-1">背包<span id="inventory-count" class="tab-count">0</span></button>
+          <button type="button" class="tab" role="tab" data-tab="pets" aria-selected="false" tabindex="-1">宠物<span class="tab-count"><span id="pet-count">0</span>/25</span></button>
+          <button type="button" class="tab" role="tab" data-tab="catalog" aria-selected="false" tabindex="-1">添加物品</button>
+        </nav>
+
+        <section class="tab-panel" data-panel="profile" role="tabpanel">
+          <form id="profile-form" class="profile-grid">
+            <section class="card span-all">
+              <div class="card-head"><div><p class="eyebrow">Basic</p><h3>基本信息</h3></div><p>QQ号与 PlayerID 由存档决定，不可修改</p></div>
+              <div class="form-grid cols-4">
+                <label class="field">QQ号码<input id="profile-uin" disabled></label>
+                <label class="field">协议 PlayerID<input id="profile-player-id" disabled></label>
+                <label class="field">昵称<input id="profile-nickname" maxlength="20" required></label>
+                <label class="field">性别<select id="profile-gender"><option value="0">女性</option><option value="1">男性</option></select></label>
+                <label class="field">身份<select id="profile-identity" required></select><span class="field-help">紫钻对应客户端身份位 0x2000（8192）</span></label>
+                <label class="field span-2">登录密码
+                  <span class="password-control"><input id="profile-password" type="password" minlength="6" maxlength="16" pattern="[!-~]{6,16}" autocomplete="new-password" placeholder="留空表示不修改"><button id="toggle-profile-password" type="button" class="secondary compact">显示</button></span>
+                  <span class="field-help">服务端不保存明文，原密码不可回显。限 6–16 位可打印 ASCII 字符。</span>
+                </label>
+                <label class="check switch"><input id="profile-tutorial" type="checkbox"><span>已完成新手教程</span></label>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-head"><div><p class="eyebrow">Progress</p><h3>等级与积分</h3></div><p>选择等级会自动填入该级起始积分</p></div>
+              <div class="form-grid cols-2">
+                <label class="field">竞技等级<select id="profile-degree" required></select><span id="profile-degree-detail" class="field-help"></span></label>
+                <label class="field">竞技积分<input id="profile-points" type="number" min="0" max="1631150000" required><span id="profile-points-range" class="field-help"></span></label>
+                <label class="field">探险等级<select id="profile-adventure-level" required></select><span class="field-help">由探险经验决定，不占用独立协议字段</span></label>
+                <label class="field">探险经验<input id="profile-adventure-points" type="number" min="0" max="428326799" required><span id="profile-adventure-range" class="field-help"></span></label>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-head"><div><p class="eyebrow">Assets</p><h3>资产与战绩</h3></div><p id="profile-winrate">胜率 —</p></div>
+              <div class="form-grid cols-3">
+                <label class="field span-all">QQ糖币<input id="profile-money" type="number" min="0" max="4294967295" required></label>
+                <label class="field">胜场<input id="profile-wins" type="number" min="0" max="4294967295" required></label>
+                <label class="field">败场<input id="profile-losses" type="number" min="0" max="4294967295" required></label>
+                <label class="field">平场<input id="profile-draws" type="number" min="0" max="4294967295" required></label>
+              </div>
+            </section>
+
+            <div id="profile-savebar" class="savebar span-all">
+              <span id="profile-dirty" class="savebar-status">资料已同步 · 修改保存后需重新登录客户端生效</span>
+              <div class="toolbar">
+                <button id="reset-profile" type="button" class="secondary" disabled>撤销修改</button>
+                <button id="save-profile" type="submit" class="primary">保存资料</button>
+              </div>
+            </div>
           </form>
         </section>
 
-        <section class="panel inventory-panel">
-          <div class="panel-title">
-            <div><p class="eyebrow">Inventory</p><h2>背包</h2></div>
-            <div class="count-chip"><strong id="inventory-count">0</strong> 种物品</div>
+        <section class="tab-panel hidden" data-panel="inventory" role="tabpanel">
+          <div class="panel-toolbar">
+            <label class="search-field"><span class="sr-only">筛选背包</span><input id="inventory-search" type="search" placeholder="按名称或 ID 筛选背包"></label>
+            <label class="select-field"><span class="sr-only">分类</span><select id="inventory-kind"><option value="">全部分类</option></select></label>
+            <button id="goto-catalog" type="button" class="secondary">＋ 添加物品</button>
           </div>
-          <div class="inventory-controls">
-            <label><span>分类</span><select id="inventory-kind"><option value="">全部分类</option></select></label>
-            <div class="inventory-pagination" aria-label="背包分页">
+          <div class="list-head">
+            <p id="inventory-result" class="result-line"></p>
+            <div class="pager" aria-label="背包分页">
               <button id="inventory-prev" type="button" class="secondary compact">上一页</button>
               <span id="inventory-page">第 1 / 1 页</span>
               <button id="inventory-next" type="button" class="secondary compact">下一页</button>
             </div>
           </div>
-          <div id="inventory-list" class="inventory-list"></div>
+          <div id="inventory-list" class="card list-card inventory-list"></div>
         </section>
 
-        <section class="panel pet-panel">
-          <div class="panel-title">
-            <div><p class="eyebrow">Pets</p><h2>已生成宠物</h2></div>
-            <div class="count-chip"><strong id="pet-count">0</strong> / 25</div>
-          </div>
-          <p class="hint">宠物卡保存在背包；使用宠物卡后才生成这里的宠物实体。两者编号不同，但已按原客户端关系关联并共用卡片名称、说明和图片。</p>
-          <div id="owned-pet-list" class="owned-pet-list"></div>
-          <div class="pet-catalog-heading">
-            <label class="search-line wide"><span>搜索宠物</span><input id="pet-search" type="search" placeholder="输入名称、PetTypeID 或模型编号"></label>
-            <p id="pet-total" class="result-line"></p>
-          </div>
-          <div id="pet-grid" class="pet-grid"></div>
+        <section class="tab-panel hidden" data-panel="pets" role="tabpanel">
+          <section class="card">
+            <div class="card-head"><div><p class="eyebrow">Pets</p><h3>已生成宠物</h3></div><p>上限 25 只</p></div>
+            <p class="hint">宠物卡保存在背包；使用宠物卡后才生成这里的宠物实体。两者编号不同，但已按原客户端关系关联并共用卡片名称、说明和图片。</p>
+            <div id="owned-pet-list" class="owned-pet-list"></div>
+          </section>
+          <section class="card">
+            <div class="card-head"><div><p class="eyebrow">Pet Catalog</p><h3>宠物图鉴</h3></div><p id="pet-total"></p></div>
+            <div class="panel-toolbar">
+              <label class="search-field"><span class="sr-only">搜索宠物</span><input id="pet-search" type="search" placeholder="输入名称、PetTypeID 或模型编号"></label>
+            </div>
+            <div id="pet-grid" class="pet-grid"></div>
+          </section>
         </section>
 
-        <section class="panel catalog-panel">
-          <div class="panel-title catalog-title">
-            <div><p class="eyebrow">Client Catalog</p><h2>添加物品</h2></div>
-            <p>来自当前原版客户端物品表，优先显示内置图标。</p>
+        <section id="catalog-panel" class="tab-panel hidden" data-panel="catalog" role="tabpanel">
+          <div class="panel-toolbar">
+            <label class="search-field"><span class="sr-only">搜索物品</span><input id="item-search" type="search" placeholder="输入 ID、名称、分类或描述"></label>
+            <label class="select-field"><span class="sr-only">分类</span><select id="item-kind"><option value="">全部分类</option></select></label>
+            <label class="check switch"><input id="item-images-only" type="checkbox"><span>只看本地有图片</span></label>
           </div>
-          <div class="catalog-controls">
-            <label class="search-line wide"><span>搜索物品</span><input id="item-search" type="search" placeholder="输入 ID、名称、分类或描述"></label>
-            <label><span>分类</span><select id="item-kind"><option value="">全部分类</option></select></label>
-            <label class="check catalog-check"><input id="item-images-only" type="checkbox"><span>只看本地有图片</span></label>
-          </div>
-          <div class="catalog-result-bar">
+          <div class="list-head">
             <p id="item-total" class="result-line"></p>
-            <div class="catalog-pagination" aria-label="可添加物品分页">
-              <button id="item-first" type="button" class="secondary compact">首页</button>
-              <button id="item-prev" type="button" class="secondary compact">上一页</button>
+            <div class="pager" aria-label="可添加物品分页">
+              <button id="item-first" type="button" class="secondary compact" data-item-page="first">首页</button>
+              <button id="item-prev" type="button" class="secondary compact" data-item-page="prev">上一页</button>
               <span id="item-page">第 1 / 1 页</span>
-              <button id="item-next" type="button" class="secondary compact">下一页</button>
-              <button id="item-last" type="button" class="secondary compact">末页</button>
+              <button id="item-next" type="button" class="secondary compact" data-item-page="next">下一页</button>
+              <button id="item-last" type="button" class="secondary compact" data-item-page="last">末页</button>
             </div>
           </div>
           <div id="item-grid" class="item-grid"></div>
+          <div class="list-foot">
+            <div class="pager" aria-label="可添加物品分页（底部）">
+              <button type="button" class="secondary compact" data-item-page="prev" data-scroll-top>上一页</button>
+              <span id="item-page-bottom">第 1 / 1 页</span>
+              <button type="button" class="secondary compact" data-item-page="next" data-scroll-top>下一页</button>
+            </div>
+          </div>
         </section>
       </div>
-    </section>
-  </main>
+    </main>
+  </div>
 
   <dialog id="create-dialog">
     <form id="create-form" method="dialog" class="dialog-card">
-      <div><p class="eyebrow">New Account</p><h2>创建本地账号</h2></div>
-      <label>QQ号码<input id="create-uin" type="number" min="1" max="4294967295" value="1000003" required></label>
-      <label>昵称<input id="create-nickname" maxlength="16" placeholder="请输入昵称" required><small>最多16个 GBK 字节（8个汉字或16个英文字母），对局昵称栏可能裁剪显示</small></label>
-      <label>性别<select id="create-gender"><option value="0">女性</option><option value="1">男性</option></select></label>
-      <label>初始密码
+      <div class="dialog-head"><p class="eyebrow">New Account</p><h2>创建本地账号</h2></div>
+      <div class="form-grid cols-2">
+        <label class="field">QQ号码<input id="create-uin" type="number" min="1" max="4294967295" value="1000003" required></label>
+        <label class="field">性别<select id="create-gender"><option value="0">女性</option><option value="1">男性</option></select></label>
+      </div>
+      <label class="field">昵称<input id="create-nickname" maxlength="16" placeholder="请输入昵称" required><small class="field-help">最多16个 GBK 字节（8个汉字或16个英文字母），对局昵称栏可能裁剪显示</small></label>
+      <label class="field">初始密码
         <span class="password-control"><input id="create-password" type="password" minlength="6" maxlength="16" pattern="[!-~]{6,16}" autocomplete="new-password" value="123456" required><button id="toggle-create-password" type="button" class="secondary compact">显示</button></span>
       </label>
       <p class="hint">新账号继承默认人物数据与初始背包，并自动获得不冲突的 PlayerID。密码限 6–16 位可打印 ASCII 字符。</p>
@@ -142,10 +182,22 @@
 
   <dialog id="grant-item-dialog">
     <form id="grant-item-form" method="dialog" class="dialog-card">
-      <div><p class="eyebrow">Inventory</p><h2>加入背包</h2></div>
-      <p id="grant-item-name" class="dialog-item-name"></p>
-      <label>数量<input id="grant-item-quantity" type="number" min="1" max="999" value="1" required></label>
-      <div class="toolbar end"><button id="cancel-grant-item" type="button" class="secondary">取消</button><button type="submit" class="primary">确认添加</button></div>
+      <div class="dialog-head"><p class="eyebrow">Inventory</p><h2>加入背包</h2></div>
+      <div class="grant-preview">
+        <span class="slot"><img id="grant-item-image" class="item-icon" alt=""></span>
+        <div><p id="grant-item-name" class="dialog-item-name"></p><small id="grant-item-owned" class="item-meta"></small></div>
+      </div>
+      <label class="field" for="grant-item-quantity">数量
+        <span class="stepper wide"><button type="button" data-grant-step="-1" aria-label="减少">−</button><input id="grant-item-quantity" type="number" min="1" max="999" value="1" required><button type="button" data-grant-step="1" aria-label="增加">＋</button></span>
+      </label>
+      <div class="chips" aria-label="快捷数量">
+        <button type="button" class="chip" data-grant-set="1">1</button>
+        <button type="button" class="chip" data-grant-set="10">10</button>
+        <button type="button" class="chip" data-grant-set="99">99</button>
+        <button type="button" class="chip" data-grant-set="max">加满</button>
+      </div>
+      <p id="grant-item-result" class="hint"></p>
+      <div class="toolbar end"><button id="cancel-grant-item" type="button" class="secondary">取消</button><button id="confirm-grant-item" type="submit" class="primary">确认添加</button></div>
     </form>
   </dialog>
 

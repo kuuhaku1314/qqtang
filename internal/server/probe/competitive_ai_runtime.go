@@ -2382,7 +2382,9 @@ func (runtime *liveCompetitiveAIRuntime) projectBombKicked(server *Server, befor
 			position: event.FromCell, appearance: competitiveAIDefaultBombAppearance, power: bomb.Power + 1,
 		}
 	}
-	direction, ok := nativeMapElementDirection(event.FromCell, event.Cell)
+	// Panda throws may land up to eight cells away; map-element pushes
+	// accept only adjacent destinations and would discard these requests.
+	direction, ok := nativeBombMoveDirection(event.FromCell, event.Cell)
 	if !ok {
 		runtime.clearSceneRequest(key)
 		return false

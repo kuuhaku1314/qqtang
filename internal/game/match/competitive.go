@@ -112,6 +112,8 @@ type CompetitiveRuleConfig struct {
 	PlayerLifecycle  CompetitivePlayerLifecycle
 	Objective        CompetitiveObjectiveKind
 	TeamTopology     CompetitiveTeamTopology
+	// Native statue cells, including empty statues that stop a type-9 hit.
+	SculptureCells []CompetitiveSculptureCell
 	// NativeHitLimit is the number of non-avatar 0x10F4 harm notifications a
 	// rule-7/8 participant can sustain before its early 0x0FA7 report becomes
 	// an authoritative death. Zero selects the proven native default of four.
@@ -437,7 +439,7 @@ func NewCompetitiveBattleWithRuleConfig(gameID, mapID uint32, arbitratorID uint1
 		battle.buns = newCompetitiveBunState(participants)
 	}
 	if config.Objective == CompetitiveObjectiveSculpture {
-		battle.sculptures = newCompetitiveSculptureState(participants)
+		battle.sculptures = newCompetitiveSculptureState(participants, config.SculptureCells)
 	}
 	if config.PlayerLifecycle == CompetitivePlayerNativeDurability {
 		hitLimit := config.NativeHitLimit

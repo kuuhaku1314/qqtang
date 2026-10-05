@@ -784,6 +784,9 @@ type Event struct {
 	ProjectileDirection  Direction
 	ObjectID             uint32
 	MovementStatus       MovementStatusKind
+	// Lightweight contact credit metadata, independent of full item diagnostics.
+	MovementStatusBefore      MovementStatusKind `json:",omitempty"`
+	MovementRemainingBeforeMS uint32             `json:",omitempty"`
 	// Blast bounds are populated only for EventBombExploded. They mirror the
 	// four inclusive row/column limits carried by native EXPLODED_BOMB_C and
 	// let the live adapter serialize the exact engine result without
